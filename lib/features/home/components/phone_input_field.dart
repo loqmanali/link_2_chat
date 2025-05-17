@@ -35,6 +35,10 @@ class PhoneInputField extends HookWidget {
     // Controller for the IntlPhoneField
     final phoneFieldController = useTextEditingController();
 
+    // إنشاء focusNode افتراضي إذا لم يتم تمريره
+    final defaultFocusNode = useFocusNode();
+    final effectiveFocusNode = focusNode ?? defaultFocusNode;
+
     // Reference to the IntlPhoneField key
     final phoneFieldKey = GlobalKey<FormFieldState>();
 
@@ -71,6 +75,9 @@ class PhoneInputField extends HookWidget {
               number: phoneNumber,
             );
             onChanged(completePhoneNumber);
+
+            // استعادة التركيز بعد تحديث البيانات
+            effectiveFocusNode.requestFocus();
           });
 
           return;
@@ -145,7 +152,7 @@ class PhoneInputField extends HookWidget {
               child: IntlPhoneField(
                 key: phoneFieldKey,
                 controller: phoneFieldController,
-                focusNode: focusNode,
+                focusNode: effectiveFocusNode,
                 decoration: InputDecoration(
                   hintText: 'Enter phone number',
                   border: OutlineInputBorder(
@@ -201,6 +208,8 @@ class PhoneInputField extends HookWidget {
                       final data = await Clipboard.getData('text/plain');
                       if (data != null && data.text != null) {
                         parseFullPhoneNumber(data.text!);
+                        // استعادة التركيز بعد لصق الرقم
+                        effectiveFocusNode.requestFocus();
                       }
                     },
                     tooltip: 'Paste phone number',
@@ -210,9 +219,15 @@ class PhoneInputField extends HookWidget {
                 invalidNumberMessage: errorText,
                 disableLengthCheck: true,
                 enabled: enabled,
-                onChanged: onChanged,
+                onChanged: (phone) {
+                  // حافظ على التركيز بعد التغيير
+                  effectiveFocusNode.requestFocus();
+                  onChanged(phone);
+                },
                 onCountryChanged: (country) {
                   selectedCountryCode.value = country.code;
+                  // حافظ على التركيز بعد تغيير الدولة
+                  effectiveFocusNode.requestFocus();
                 },
                 dropdownTextStyle: const TextStyle(
                   fontSize: 15,
@@ -245,6 +260,8 @@ class PhoneInputField extends HookWidget {
                     final data = await Clipboard.getData('text/plain');
                     if (data != null && data.text != null) {
                       parseFullPhoneNumber(data.text!);
+                      // استعادة التركيز بعد لصق الرقم
+                      effectiveFocusNode.requestFocus();
                     }
                   },
                   borderRadius: BorderRadius.circular(12),
