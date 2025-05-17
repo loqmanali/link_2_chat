@@ -80,21 +80,24 @@ class MainScreen extends HookWidget {
       ),
     );
 
-    return Scaffold(
-      extendBody: true,
-      body:
-          isLoading.value
-              ? const Center(child: CircularProgressIndicator())
-              : IndexedStack(index: selectedIndex.value, children: screens),
-      bottomNavigationBar: BottomNav(
-        currentIndex: selectedIndex.value,
-        onTap: (index) {
-          // Make sure the index is valid for our screens array
-          if (index < screens.length) {
-            selectedIndex.value = index;
-          }
-        },
-        showTeamsTab: showTeamsTab,
+    return SafeArea(
+      top: false,
+      child: Scaffold(
+        extendBody: true,
+        body:
+            isLoading.value
+                ? const Center(child: CircularProgressIndicator())
+                : IndexedStack(index: selectedIndex.value, children: screens),
+        bottomNavigationBar: BottomNav(
+          currentIndex: selectedIndex.value,
+          onTap: (index) {
+            // Make sure the index is valid for our screens array
+            if (index < screens.length) {
+              selectedIndex.value = index;
+            }
+          },
+          showTeamsTab: showTeamsTab,
+        ),
       ),
     );
   }
