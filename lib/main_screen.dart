@@ -83,7 +83,6 @@ class MainScreen extends HookWidget {
     return SafeArea(
       top: false,
       child: Scaffold(
-        extendBody: true,
         body:
             isLoading.value
                 ? const Center(child: CircularProgressIndicator())
