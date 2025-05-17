@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -66,7 +67,21 @@ class MainScreen extends HookWidget {
     print('- !isGuestUser: ${!isGuestUser.value}');
     print('- Final showTeamsTab result: $showTeamsTab');
 
+    // Apply system UI overlay style directly in this screen
+    SystemChrome.setSystemUIOverlayStyle(
+      const SystemUiOverlayStyle(
+        statusBarColor: Colors.transparent, // Make status bar transparent
+        statusBarIconBrightness:
+            Brightness.light, // Light icons on dark background
+        systemNavigationBarColor: Colors.white, // White navigation bar
+        systemNavigationBarIconBrightness:
+            Brightness.dark, // Dark icons on white background
+        systemNavigationBarDividerColor: Colors.transparent, // No divider
+      ),
+    );
+
     return Scaffold(
+      extendBody: true,
       body:
           isLoading.value
               ? const Center(child: CircularProgressIndicator())

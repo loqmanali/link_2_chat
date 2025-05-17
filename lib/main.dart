@@ -27,6 +27,19 @@ void main() async {
     DeviceOrientation.portraitDown,
   ]);
 
+  // Set system UI overlay style
+  SystemChrome.setSystemUIOverlayStyle(
+    const SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent, // Make status bar transparent
+      statusBarIconBrightness:
+          Brightness.light, // Dark icons on light background
+      systemNavigationBarColor: Colors.white, // White navigation bar
+      systemNavigationBarIconBrightness:
+          Brightness.dark, // Dark icons on white background
+      systemNavigationBarDividerColor: Colors.transparent, // No divider
+    ),
+  );
+
   // Initialize Hive for local storage
   await Hive.initFlutter();
 

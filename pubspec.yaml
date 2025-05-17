@@ -124,7 +124,6 @@ flutter:
   # see https://flutter.dev/to/font-from-package
 
   assets:
-    - assets/icons/
     - assets/images/
 
 flutter_icons:
