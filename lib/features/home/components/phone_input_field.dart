@@ -39,6 +39,9 @@ class PhoneInputField extends HookWidget {
     final defaultFocusNode = useFocusNode();
     final effectiveFocusNode = focusNode ?? defaultFocusNode;
 
+    // حالة لتتبع ما إذا كانت لوحة المفاتيح مفتوحة
+    final isKeyboardOpen = useState(false);
+
     // Reference to the IntlPhoneField key
     final phoneFieldKey = GlobalKey<FormFieldState>();
 
@@ -77,7 +80,9 @@ class PhoneInputField extends HookWidget {
             onChanged(completePhoneNumber);
 
             // استعادة التركيز بعد تحديث البيانات
-            effectiveFocusNode.requestFocus();
+            if (isKeyboardOpen.value) {
+              effectiveFocusNode.requestFocus();
+            }
           });
 
           return;
@@ -94,6 +99,11 @@ class PhoneInputField extends HookWidget {
         parseFullPhoneNumber(controller.text);
         controller.clear(); // Clear original controller to avoid duplication
       }
+
+      // إضافة مستمع للتركيز لتتبع حالة لوحة المفاتيح
+      effectiveFocusNode.addListener(() {
+        isKeyboardOpen.value = effectiveFocusNode.hasFocus;
+      });
 
       return () {
         animationController.dispose();
@@ -149,105 +159,123 @@ class PhoneInputField extends HookWidget {
             ),
             Container(
               padding: const EdgeInsets.only(left: 16, right: 16, bottom: 16),
-              child: IntlPhoneField(
-                key: phoneFieldKey,
-                controller: phoneFieldController,
-                focusNode: effectiveFocusNode,
-                decoration: InputDecoration(
-                  hintText: 'Enter phone number',
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(12),
-                    borderSide: BorderSide(
-                      color: Colors.grey.shade200,
-                      width: 1.5,
+              child: Focus(
+                onFocusChange: (hasFocus) {
+                  // تحديث حالة لوحة المفاتيح
+                  isKeyboardOpen.value = hasFocus;
+                },
+                child: IntlPhoneField(
+                  key: phoneFieldKey,
+                  controller: phoneFieldController,
+                  focusNode: effectiveFocusNode,
+                  decoration: InputDecoration(
+                    hintText: 'Enter phone number',
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12),
+                      borderSide: BorderSide(
+                        color: Colors.grey.shade200,
+                        width: 1.5,
+                      ),
                     ),
-                  ),
-                  enabledBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(12),
-                    borderSide: BorderSide(
-                      color: Colors.grey.shade200,
-                      width: 1.5,
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12),
+                      borderSide: BorderSide(
+                        color: Colors.grey.shade200,
+                        width: 1.5,
+                      ),
                     ),
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(12),
-                    borderSide: BorderSide(
-                      color: Colors.green.shade400,
-                      width: 1.5,
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12),
+                      borderSide: BorderSide(
+                        color: Colors.green.shade400,
+                        width: 1.5,
+                      ),
                     ),
-                  ),
-                  errorBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(12),
-                    borderSide: const BorderSide(
+                    errorBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12),
+                      borderSide: const BorderSide(
+                        color: Colors.redAccent,
+                        width: 1.5,
+                      ),
+                    ),
+                    focusedErrorBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12),
+                      borderSide: const BorderSide(
+                        color: Colors.redAccent,
+                        width: 1.5,
+                      ),
+                    ),
+                    contentPadding: const EdgeInsets.symmetric(
+                      vertical: 16,
+                      horizontal: 16,
+                    ),
+                    filled: true,
+                    fillColor: Colors.grey.shade50,
+                    hintStyle: TextStyle(color: Colors.grey[400], fontSize: 15),
+                    errorStyle: const TextStyle(
                       color: Colors.redAccent,
-                      width: 1.5,
+                      fontSize: 12,
+                      fontWeight: FontWeight.w500,
+                    ),
+                    suffixIcon: IconButton(
+                      icon: const Icon(Icons.paste_rounded),
+                      onPressed: () async {
+                        final data = await Clipboard.getData('text/plain');
+                        if (data != null && data.text != null) {
+                          parseFullPhoneNumber(data.text!);
+                          // استعادة التركيز بعد لصق الرقم مع تأخير طفيف
+                          Future.delayed(const Duration(milliseconds: 100), () {
+                            effectiveFocusNode.requestFocus();
+                          });
+                        }
+                      },
+                      tooltip: 'Paste phone number',
                     ),
                   ),
-                  focusedErrorBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(12),
-                    borderSide: const BorderSide(
-                      color: Colors.redAccent,
-                      width: 1.5,
-                    ),
-                  ),
-                  contentPadding: const EdgeInsets.symmetric(
-                    vertical: 16,
-                    horizontal: 16,
-                  ),
-                  filled: true,
-                  fillColor: Colors.grey.shade50,
-                  hintStyle: TextStyle(color: Colors.grey[400], fontSize: 15),
-                  errorStyle: const TextStyle(
-                    color: Colors.redAccent,
-                    fontSize: 12,
-                    fontWeight: FontWeight.w500,
-                  ),
-                  suffixIcon: IconButton(
-                    icon: const Icon(Icons.paste_rounded),
-                    onPressed: () async {
-                      final data = await Clipboard.getData('text/plain');
-                      if (data != null && data.text != null) {
-                        parseFullPhoneNumber(data.text!);
-                        // استعادة التركيز بعد لصق الرقم
+                  initialCountryCode: selectedCountryCode.value,
+                  invalidNumberMessage: errorText,
+                  disableLengthCheck: true,
+                  enabled: enabled,
+                  onChanged: (phone) {
+                    // تأخير طفيف قبل إعادة التركيز
+                    Future.delayed(const Duration(milliseconds: 50), () {
+                      if (isKeyboardOpen.value) {
                         effectiveFocusNode.requestFocus();
                       }
-                    },
-                    tooltip: 'Paste phone number',
+                    });
+                    onChanged(phone);
+                  },
+                  onCountryChanged: (country) {
+                    selectedCountryCode.value = country.code;
+                    // تأخير طفيف قبل إعادة التركيز
+                    Future.delayed(const Duration(milliseconds: 50), () {
+                      if (isKeyboardOpen.value) {
+                        effectiveFocusNode.requestFocus();
+                      }
+                    });
+                  },
+                  dropdownTextStyle: const TextStyle(
+                    fontSize: 15,
+                    fontWeight: FontWeight.w500,
                   ),
-                ),
-                initialCountryCode: selectedCountryCode.value,
-                invalidNumberMessage: errorText,
-                disableLengthCheck: true,
-                enabled: enabled,
-                onChanged: (phone) {
-                  // حافظ على التركيز بعد التغيير
-                  effectiveFocusNode.requestFocus();
-                  onChanged(phone);
-                },
-                onCountryChanged: (country) {
-                  selectedCountryCode.value = country.code;
-                  // حافظ على التركيز بعد تغيير الدولة
-                  effectiveFocusNode.requestFocus();
-                },
-                dropdownTextStyle: const TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.w500,
-                ),
-                keyboardType: TextInputType.phone,
-                inputFormatters: [FilteringTextInputFormatter.digitsOnly],
-                flagsButtonPadding: const EdgeInsets.symmetric(horizontal: 12),
-                dropdownIconPosition: IconPosition.trailing,
-                showDropdownIcon: true,
-                dropdownIcon: Icon(
-                  Icons.keyboard_arrow_down_rounded,
-                  color: Colors.grey.shade700,
-                  size: 24,
-                ),
-                flagsButtonMargin: const EdgeInsets.only(right: 8),
-                showCountryFlag: true,
-                style: const TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.w500,
+                  keyboardType: TextInputType.phone,
+                  inputFormatters: [FilteringTextInputFormatter.digitsOnly],
+                  flagsButtonPadding: const EdgeInsets.symmetric(
+                    horizontal: 12,
+                  ),
+                  dropdownIconPosition: IconPosition.trailing,
+                  showDropdownIcon: true,
+                  dropdownIcon: Icon(
+                    Icons.keyboard_arrow_down_rounded,
+                    color: Colors.grey.shade700,
+                    size: 24,
+                  ),
+                  flagsButtonMargin: const EdgeInsets.only(right: 8),
+                  showCountryFlag: true,
+                  style: const TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w500,
+                  ),
                 ),
               ),
             ),
@@ -260,8 +288,10 @@ class PhoneInputField extends HookWidget {
                     final data = await Clipboard.getData('text/plain');
                     if (data != null && data.text != null) {
                       parseFullPhoneNumber(data.text!);
-                      // استعادة التركيز بعد لصق الرقم
-                      effectiveFocusNode.requestFocus();
+                      // استعادة التركيز بعد لصق الرقم مع تأخير طفيف
+                      Future.delayed(const Duration(milliseconds: 100), () {
+                        effectiveFocusNode.requestFocus();
+                      });
                     }
                   },
                   borderRadius: BorderRadius.circular(12),
