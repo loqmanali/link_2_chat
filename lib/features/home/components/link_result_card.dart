@@ -156,31 +156,34 @@ class LinkResultCard extends HookWidget {
               ),
             ),
             const SizedBox(height: 20),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                _buildActionButton(
-                  icon: Icons.qr_code_rounded,
-                  label: 'QR Code',
-                  onPressed: onQrPressed,
-                  color: Colors.grey[700]!,
-                ),
-                const SizedBox(width: 12),
-                _buildActionButton(
-                  icon: Icons.share_rounded,
-                  label: 'Share',
-                  onPressed: _shareLink,
-                  color: Colors.grey[700]!,
-                ),
-                const SizedBox(width: 12),
-                _buildActionButton(
-                  icon: Icons.open_in_new_rounded,
-                  label: 'Open',
-                  onPressed: _openLink,
-                  color: platformColor,
-                  isPrimary: true,
-                ),
-              ],
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  _buildActionButton(
+                    icon: Icons.qr_code_rounded,
+                    label: 'QR Code',
+                    onPressed: onQrPressed,
+                    color: Colors.grey[700]!,
+                  ),
+                  const SizedBox(width: 12),
+                  _buildActionButton(
+                    icon: Icons.share_rounded,
+                    label: 'Share',
+                    onPressed: _shareLink,
+                    color: Colors.grey[700]!,
+                  ),
+                  const SizedBox(width: 12),
+                  _buildActionButton(
+                    icon: Icons.open_in_new_rounded,
+                    label: 'Open',
+                    onPressed: _openLink,
+                    color: platformColor,
+                    isPrimary: true,
+                  ),
+                ],
+              ),
             ),
           ],
         ),
@@ -202,7 +205,7 @@ class LinkResultCard extends HookWidget {
       style: TextButton.styleFrom(
         foregroundColor: color,
         backgroundColor: isPrimary ? color.withOpacity(0.1) : null,
-        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
       ),
     );
