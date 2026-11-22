@@ -4,3 +4,7 @@ export 'package:link_2_chat/features/subscription/application/subscription_provi
     show changePlanActionProvider, currentPlanProvider;
 export 'package:link_2_chat/features/subscription/domain/plan.dart'
     show Plan, planCatalog;
+export 'package:link_2_chat/features/subscription/presentation/routes.dart'
+    show subscriptionPath, subscriptionRoutes;
+export 'package:link_2_chat/features/subscription/presentation/subscription_screen.dart'
+    show SubscriptionScreen;

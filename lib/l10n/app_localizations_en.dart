@@ -114,41 +114,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get commonViewHistory => 'View History';
 
   @override
-  String get commonSyncing => 'Syncing...';
-
-  @override
   String get commonReady => 'Ready';
-
-  @override
-  String get commonSyncFailed => 'Sync failed';
-
-  @override
-  String get commonOffline => 'Offline';
-
-  @override
-  String get commonSynced => 'Synced';
-
-  @override
-  String commonLastSynced(String time) {
-    return 'Last synced: $time';
-  }
-
-  @override
-  String get commonNotSynced => 'Not synced yet';
-
-  @override
-  String commonLastSync(String time) {
-    return 'Last sync: $time';
-  }
 
   @override
   String get commonNever => 'Never';
 
   @override
   String get commonInitializing => 'Initializing...';
-
-  @override
-  String get commonSyncNowTooltip => 'Sync now';
 
   @override
   String commonPlatformLink(String platformName) {
@@ -825,26 +797,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get settingsApiKeysSubtitle => 'Manage API keys for integration';
 
   @override
-  String get settingsSyncUsersTitle => 'Sync Local Users';
-
-  @override
-  String get settingsSyncUsersSubtitle => 'Sync local users with Supabase';
-
-  @override
-  String get settingsSyncAccountTitle => 'Sync Account Data';
-
-  @override
-  String get settingsSyncAccountSubtitle =>
-      'Refresh subscription and teams data';
-
-  @override
-  String get settingsForceUpdateTitle => 'Force Update All Data';
-
-  @override
-  String get settingsForceUpdateSubtitle =>
-      'Re-login and update all local data';
-
-  @override
   String get settingsSignOut => 'Sign Out';
 
   @override
@@ -864,37 +816,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get settingsContinue => 'Continue';
 
   @override
-  String get settingsSyncingData => 'Syncing user data...';
-
-  @override
-  String get settingsSyncNotLoggedIn =>
-      'Failed to sync: Not logged in to Supabase';
-
-  @override
-  String get settingsSyncNoLocalUser => 'Failed to sync: No local user found';
-
-  @override
-  String get settingsSyncSuccess => 'User data synced successfully';
-
-  @override
-  String settingsSyncError(String error) {
-    return 'Error syncing data: $error';
-  }
-
-  @override
   String get settingsUpdatingAllData => 'Updating all local data...';
 
   @override
-  String get settingsForceNoLocalUser => 'Failed: No local user found';
-
-  @override
   String get settingsCancelled => 'Cancelled by user';
-
-  @override
-  String get settingsForceLoginFailed => 'Failed to login with Supabase';
-
-  @override
-  String get settingsForceSuccess => 'All data updated successfully';
 
   @override
   String settingsLastLogin(String date) {
@@ -1039,13 +964,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get settingsIncorrectPassword => 'Incorrect password';
 
   @override
-  String get settingsSyncUsersDialogTitle => 'Sync Users with Supabase';
-
-  @override
-  String get settingsSyncUsersDialogMessage =>
-      'Enter admin credentials to sync local users with Supabase. This will create accounts for all local users.';
-
-  @override
   String get settingsAdminEmailLabel => 'Admin Email';
 
   @override
@@ -1056,55 +974,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get settingsAdminPasswordRequired => 'Please enter admin password';
-
-  @override
-  String get settingsSyncUsersButton => 'Sync Users';
-
-  @override
-  String get settingsSyncResultsTitle => 'Sync Results';
-
-  @override
-  String settingsSyncTotalUsers(num count) {
-    return 'Total users: $count';
-  }
-
-  @override
-  String settingsSyncSuccessCount(num count) {
-    return 'Successfully synced: $count';
-  }
-
-  @override
-  String settingsSyncFailedCount(num count) {
-    return 'Failed: $count';
-  }
-
-  @override
-  String settingsSyncSkippedCount(num count) {
-    return 'Skipped: $count';
-  }
-
-  @override
-  String get settingsSyncDetails => 'Details:';
-
-  @override
-  String settingsSyncEmail(String email) {
-    return 'Email: $email';
-  }
-
-  @override
-  String settingsSyncStatus(String status) {
-    return 'Status: $status';
-  }
-
-  @override
-  String settingsSyncReason(String reason) {
-    return 'Reason: $reason';
-  }
-
-  @override
-  String settingsSyncNewId(String id) {
-    return 'New ID: $id';
-  }
 
   @override
   String get settingsVersion => 'Version';
@@ -1337,53 +1206,4 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get subscriptionErrorUpdateFailed => 'Failed to update subscription';
-
-  @override
-  String get syncDemoTitle => 'Sync Status Demo';
-
-  @override
-  String get syncDemoDescription =>
-      'This demo shows how to integrate the sync status indicator into your UI.';
-
-  @override
-  String get syncDemoManualSync => 'Manual Sync';
-
-  @override
-  String get syncDemoArabicNote =>
-      'بإمكانك استخدام مؤشر حالة المزامنة للتعرف على حالة المزامنة الحالية بين التطبيق وخادم Supabase.';
-
-  @override
-  String syncDemoCurrentStatus(String status) {
-    return 'Current Status: $status';
-  }
-
-  @override
-  String syncDemoOnline(String value) {
-    return 'Online: $value';
-  }
-
-  @override
-  String syncDemoLastSync(String time) {
-    return 'Last Sync: $time';
-  }
-
-  @override
-  String get syncDemoOptionsTitle => 'Sync Options';
-
-  @override
-  String get syncDemoArabicOptionsHeading => 'خيارات المزامنة:';
-
-  @override
-  String get syncDemoArabicOptionsBody =>
-      'يمكنك مزامنة البيانات يدويًا أو ضبط المزامنة التلقائية';
-
-  @override
-  String get syncDemoOptionsHeading => 'Sync Options:';
-
-  @override
-  String get syncDemoOptionsBody =>
-      'You can manually sync data or configure automatic sync';
-
-  @override
-  String get syncDemoSyncNow => 'Sync Now';
 }

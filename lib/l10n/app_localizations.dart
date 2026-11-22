@@ -302,53 +302,11 @@ abstract class AppLocalizations {
   /// **'View History'**
   String get commonViewHistory;
 
-  /// home_screen sync status message and sync_status_widget in-progress message
-  ///
-  /// In en, this message translates to:
-  /// **'Syncing...'**
-  String get commonSyncing;
-
   /// sync_status_widget: message when no sync data yet
   ///
   /// In en, this message translates to:
   /// **'Ready'**
   String get commonReady;
-
-  /// sync_status_widget: error state message
-  ///
-  /// In en, this message translates to:
-  /// **'Sync failed'**
-  String get commonSyncFailed;
-
-  /// sync_status_widget: offline state message
-  ///
-  /// In en, this message translates to:
-  /// **'Offline'**
-  String get commonOffline;
-
-  /// sync_status_widget: success state message
-  ///
-  /// In en, this message translates to:
-  /// **'Synced'**
-  String get commonSynced;
-
-  /// sync_status_widget subtitle
-  ///
-  /// In en, this message translates to:
-  /// **'Last synced: {time}'**
-  String commonLastSynced(String time);
-
-  /// sync_status_widget subtitle when never synced
-  ///
-  /// In en, this message translates to:
-  /// **'Not synced yet'**
-  String get commonNotSynced;
-
-  /// sync_status_indicator subtitle
-  ///
-  /// In en, this message translates to:
-  /// **'Last sync: {time}'**
-  String commonLastSync(String time);
 
   /// sync_status_indicator: fallback when no last sync time
   ///
@@ -361,12 +319,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Initializing...'**
   String get commonInitializing;
-
-  /// sync_status_widget: tooltip on sync icon button
-  ///
-  /// In en, this message translates to:
-  /// **'Sync now'**
-  String get commonSyncNowTooltip;
 
   /// home: share subject and history details dialog title
   ///
@@ -1532,42 +1484,6 @@ abstract class AppLocalizations {
   /// **'Manage API keys for integration'**
   String get settingsApiKeysSubtitle;
 
-  /// settings_screen: action card title (admin only)
-  ///
-  /// In en, this message translates to:
-  /// **'Sync Local Users'**
-  String get settingsSyncUsersTitle;
-
-  /// settings_screen: action card subtitle (admin only)
-  ///
-  /// In en, this message translates to:
-  /// **'Sync local users with Supabase'**
-  String get settingsSyncUsersSubtitle;
-
-  /// settings_screen: action card title
-  ///
-  /// In en, this message translates to:
-  /// **'Sync Account Data'**
-  String get settingsSyncAccountTitle;
-
-  /// settings_screen: action card subtitle
-  ///
-  /// In en, this message translates to:
-  /// **'Refresh subscription and teams data'**
-  String get settingsSyncAccountSubtitle;
-
-  /// settings_screen: action card title
-  ///
-  /// In en, this message translates to:
-  /// **'Force Update All Data'**
-  String get settingsForceUpdateTitle;
-
-  /// settings_screen: action card subtitle
-  ///
-  /// In en, this message translates to:
-  /// **'Re-login and update all local data'**
-  String get settingsForceUpdateSubtitle;
-
   /// settings_screen: sign out button, logout dialog title and confirm button
   ///
   /// In en, this message translates to:
@@ -1604,65 +1520,17 @@ abstract class AppLocalizations {
   /// **'Continue'**
   String get settingsContinue;
 
-  /// settings_screen: snackbar while syncing
-  ///
-  /// In en, this message translates to:
-  /// **'Syncing user data...'**
-  String get settingsSyncingData;
-
-  /// settings_screen: sync error snackbar
-  ///
-  /// In en, this message translates to:
-  /// **'Failed to sync: Not logged in to Supabase'**
-  String get settingsSyncNotLoggedIn;
-
-  /// settings_screen: sync error snackbar
-  ///
-  /// In en, this message translates to:
-  /// **'Failed to sync: No local user found'**
-  String get settingsSyncNoLocalUser;
-
-  /// settings_screen: sync success snackbar
-  ///
-  /// In en, this message translates to:
-  /// **'User data synced successfully'**
-  String get settingsSyncSuccess;
-
-  /// settings_screen: sync exception snackbar
-  ///
-  /// In en, this message translates to:
-  /// **'Error syncing data: {error}'**
-  String settingsSyncError(String error);
-
   /// settings_screen: snackbar while force updating
   ///
   /// In en, this message translates to:
   /// **'Updating all local data...'**
   String get settingsUpdatingAllData;
 
-  /// settings_screen: force update error snackbar
-  ///
-  /// In en, this message translates to:
-  /// **'Failed: No local user found'**
-  String get settingsForceNoLocalUser;
-
   /// settings_screen: snackbar when password dialog cancelled
   ///
   /// In en, this message translates to:
   /// **'Cancelled by user'**
   String get settingsCancelled;
-
-  /// settings_screen: force update error snackbar
-  ///
-  /// In en, this message translates to:
-  /// **'Failed to login with Supabase'**
-  String get settingsForceLoginFailed;
-
-  /// settings_screen: force update success snackbar
-  ///
-  /// In en, this message translates to:
-  /// **'All data updated successfully'**
-  String get settingsForceSuccess;
 
   /// settings_screen: profile last login line
   ///
@@ -1928,18 +1796,6 @@ abstract class AppLocalizations {
   /// **'Incorrect password'**
   String get settingsIncorrectPassword;
 
-  /// settings_screen: sync users dialog title
-  ///
-  /// In en, this message translates to:
-  /// **'Sync Users with Supabase'**
-  String get settingsSyncUsersDialogTitle;
-
-  /// settings_screen: sync users dialog message
-  ///
-  /// In en, this message translates to:
-  /// **'Enter admin credentials to sync local users with Supabase. This will create accounts for all local users.'**
-  String get settingsSyncUsersDialogMessage;
-
   /// settings_screen: sync users dialog email field label
   ///
   /// In en, this message translates to:
@@ -1963,72 +1819,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Please enter admin password'**
   String get settingsAdminPasswordRequired;
-
-  /// settings_screen: sync users dialog confirm button
-  ///
-  /// In en, this message translates to:
-  /// **'Sync Users'**
-  String get settingsSyncUsersButton;
-
-  /// settings_screen: sync results dialog title
-  ///
-  /// In en, this message translates to:
-  /// **'Sync Results'**
-  String get settingsSyncResultsTitle;
-
-  /// settings_screen: sync results line
-  ///
-  /// In en, this message translates to:
-  /// **'Total users: {count}'**
-  String settingsSyncTotalUsers(num count);
-
-  /// settings_screen: sync results line
-  ///
-  /// In en, this message translates to:
-  /// **'Successfully synced: {count}'**
-  String settingsSyncSuccessCount(num count);
-
-  /// settings_screen: sync results line
-  ///
-  /// In en, this message translates to:
-  /// **'Failed: {count}'**
-  String settingsSyncFailedCount(num count);
-
-  /// settings_screen: sync results line
-  ///
-  /// In en, this message translates to:
-  /// **'Skipped: {count}'**
-  String settingsSyncSkippedCount(num count);
-
-  /// settings_screen: sync results details header
-  ///
-  /// In en, this message translates to:
-  /// **'Details:'**
-  String get settingsSyncDetails;
-
-  /// settings_screen: sync result detail line
-  ///
-  /// In en, this message translates to:
-  /// **'Email: {email}'**
-  String settingsSyncEmail(String email);
-
-  /// settings_screen: sync result detail line
-  ///
-  /// In en, this message translates to:
-  /// **'Status: {status}'**
-  String settingsSyncStatus(String status);
-
-  /// settings_screen: sync result detail line
-  ///
-  /// In en, this message translates to:
-  /// **'Reason: {reason}'**
-  String settingsSyncReason(String reason);
-
-  /// settings_screen: sync result detail line
-  ///
-  /// In en, this message translates to:
-  /// **'New ID: {id}'**
-  String settingsSyncNewId(String id);
 
   /// settings_screen: about card item title
   ///
@@ -2431,84 +2221,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Failed to update subscription'**
   String get subscriptionErrorUpdateFailed;
-
-  /// sync_status_demo: app bar and body heading
-  ///
-  /// In en, this message translates to:
-  /// **'Sync Status Demo'**
-  String get syncDemoTitle;
-
-  /// sync_status_demo: description text
-  ///
-  /// In en, this message translates to:
-  /// **'This demo shows how to integrate the sync status indicator into your UI.'**
-  String get syncDemoDescription;
-
-  /// sync_status_demo: manual sync button
-  ///
-  /// In en, this message translates to:
-  /// **'Manual Sync'**
-  String get syncDemoManualSync;
-
-  /// sync_status_demo: Arabic explanation note (already Arabic in source)
-  ///
-  /// In en, this message translates to:
-  /// **'بإمكانك استخدام مؤشر حالة المزامنة للتعرف على حالة المزامنة الحالية بين التطبيق وخادم Supabase.'**
-  String get syncDemoArabicNote;
-
-  /// sync_status_demo: current status line
-  ///
-  /// In en, this message translates to:
-  /// **'Current Status: {status}'**
-  String syncDemoCurrentStatus(String status);
-
-  /// sync_status_demo: online line (value: commonYes/commonNo)
-  ///
-  /// In en, this message translates to:
-  /// **'Online: {value}'**
-  String syncDemoOnline(String value);
-
-  /// sync_status_demo: last sync line
-  ///
-  /// In en, this message translates to:
-  /// **'Last Sync: {time}'**
-  String syncDemoLastSync(String time);
-
-  /// sync_status_demo: sync options dialog title
-  ///
-  /// In en, this message translates to:
-  /// **'Sync Options'**
-  String get syncDemoOptionsTitle;
-
-  /// sync_status_demo: Arabic options heading (already Arabic in source)
-  ///
-  /// In en, this message translates to:
-  /// **'خيارات المزامنة:'**
-  String get syncDemoArabicOptionsHeading;
-
-  /// sync_status_demo: Arabic options body (already Arabic in source)
-  ///
-  /// In en, this message translates to:
-  /// **'يمكنك مزامنة البيانات يدويًا أو ضبط المزامنة التلقائية'**
-  String get syncDemoArabicOptionsBody;
-
-  /// sync_status_demo: English options heading
-  ///
-  /// In en, this message translates to:
-  /// **'Sync Options:'**
-  String get syncDemoOptionsHeading;
-
-  /// sync_status_demo: English options body
-  ///
-  /// In en, this message translates to:
-  /// **'You can manually sync data or configure automatic sync'**
-  String get syncDemoOptionsBody;
-
-  /// sync_status_demo: sync now dialog button
-  ///
-  /// In en, this message translates to:
-  /// **'Sync Now'**
-  String get syncDemoSyncNow;
 }
 
 class _AppLocalizationsDelegate

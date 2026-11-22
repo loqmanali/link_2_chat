@@ -114,41 +114,13 @@ class AppLocalizationsAr extends AppLocalizations {
   String get commonViewHistory => 'عرض السجل';
 
   @override
-  String get commonSyncing => 'جارٍ المزامنة...';
-
-  @override
   String get commonReady => 'جاهز';
-
-  @override
-  String get commonSyncFailed => 'فشلت المزامنة';
-
-  @override
-  String get commonOffline => 'غير متصل';
-
-  @override
-  String get commonSynced => 'تمت المزامنة';
-
-  @override
-  String commonLastSynced(String time) {
-    return 'آخر مزامنة: $time';
-  }
-
-  @override
-  String get commonNotSynced => 'لم تتم المزامنة بعد';
-
-  @override
-  String commonLastSync(String time) {
-    return 'آخر مزامنة: $time';
-  }
 
   @override
   String get commonNever => 'أبدًا';
 
   @override
   String get commonInitializing => 'جارٍ التهيئة...';
-
-  @override
-  String get commonSyncNowTooltip => 'مزامنة الآن';
 
   @override
   String commonPlatformLink(String platformName) {
@@ -846,26 +818,6 @@ class AppLocalizationsAr extends AppLocalizations {
   String get settingsApiKeysSubtitle => 'إدارة مفاتيح API للتكامل';
 
   @override
-  String get settingsSyncUsersTitle => 'مزامنة المستخدمين المحليين';
-
-  @override
-  String get settingsSyncUsersSubtitle =>
-      'مزامنة المستخدمين المحليين مع Supabase';
-
-  @override
-  String get settingsSyncAccountTitle => 'مزامنة بيانات الحساب';
-
-  @override
-  String get settingsSyncAccountSubtitle => 'تحديث بيانات الاشتراك والفرق';
-
-  @override
-  String get settingsForceUpdateTitle => 'فرض تحديث جميع البيانات';
-
-  @override
-  String get settingsForceUpdateSubtitle =>
-      'إعادة تسجيل الدخول وتحديث جميع البيانات المحلية';
-
-  @override
   String get settingsSignOut => 'تسجيل الخروج';
 
   @override
@@ -884,37 +836,10 @@ class AppLocalizationsAr extends AppLocalizations {
   String get settingsContinue => 'متابعة';
 
   @override
-  String get settingsSyncingData => 'جارٍ مزامنة بيانات المستخدم...';
-
-  @override
-  String get settingsSyncNotLoggedIn =>
-      'فشلت المزامنة: لم يتم تسجيل الدخول إلى Supabase';
-
-  @override
-  String get settingsSyncNoLocalUser => 'فشلت المزامنة: لا يوجد مستخدم محلي';
-
-  @override
-  String get settingsSyncSuccess => 'تمت مزامنة بيانات المستخدم بنجاح';
-
-  @override
-  String settingsSyncError(String error) {
-    return 'خطأ في مزامنة البيانات: $error';
-  }
-
-  @override
   String get settingsUpdatingAllData => 'جارٍ تحديث جميع البيانات المحلية...';
 
   @override
-  String get settingsForceNoLocalUser => 'فشل: لا يوجد مستخدم محلي';
-
-  @override
   String get settingsCancelled => 'أُلغي بواسطة المستخدم';
-
-  @override
-  String get settingsForceLoginFailed => 'فشل تسجيل الدخول عبر Supabase';
-
-  @override
-  String get settingsForceSuccess => 'تم تحديث جميع البيانات بنجاح';
 
   @override
   String settingsLastLogin(String date) {
@@ -1058,13 +983,6 @@ class AppLocalizationsAr extends AppLocalizations {
   String get settingsIncorrectPassword => 'كلمة المرور غير صحيحة';
 
   @override
-  String get settingsSyncUsersDialogTitle => 'مزامنة المستخدمين مع Supabase';
-
-  @override
-  String get settingsSyncUsersDialogMessage =>
-      'أدخل بيانات اعتماد المشرف لمزامنة المستخدمين المحليين مع Supabase. سيؤدي هذا إلى إنشاء حسابات لجميع المستخدمين المحليين.';
-
-  @override
   String get settingsAdminEmailLabel => 'بريد المشرف الإلكتروني';
 
   @override
@@ -1075,55 +993,6 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get settingsAdminPasswordRequired => 'يرجى إدخال كلمة مرور المشرف';
-
-  @override
-  String get settingsSyncUsersButton => 'مزامنة المستخدمين';
-
-  @override
-  String get settingsSyncResultsTitle => 'نتائج المزامنة';
-
-  @override
-  String settingsSyncTotalUsers(num count) {
-    return 'إجمالي المستخدمين: $count';
-  }
-
-  @override
-  String settingsSyncSuccessCount(num count) {
-    return 'تمت مزامنتهم بنجاح: $count';
-  }
-
-  @override
-  String settingsSyncFailedCount(num count) {
-    return 'فشل: $count';
-  }
-
-  @override
-  String settingsSyncSkippedCount(num count) {
-    return 'تم تخطيهم: $count';
-  }
-
-  @override
-  String get settingsSyncDetails => 'التفاصيل:';
-
-  @override
-  String settingsSyncEmail(String email) {
-    return 'البريد الإلكتروني: $email';
-  }
-
-  @override
-  String settingsSyncStatus(String status) {
-    return 'الحالة: $status';
-  }
-
-  @override
-  String settingsSyncReason(String reason) {
-    return 'السبب: $reason';
-  }
-
-  @override
-  String settingsSyncNewId(String id) {
-    return 'المعرّف الجديد: $id';
-  }
 
   @override
   String get settingsVersion => 'الإصدار';
@@ -1355,53 +1224,4 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get subscriptionErrorUpdateFailed => 'فشل تحديث الاشتراك';
-
-  @override
-  String get syncDemoTitle => 'عرض توضيحي لحالة المزامنة';
-
-  @override
-  String get syncDemoDescription =>
-      'يوضح هذا العرض التوضيحي كيفية دمج مؤشر حالة المزامنة في واجهتك.';
-
-  @override
-  String get syncDemoManualSync => 'مزامنة يدوية';
-
-  @override
-  String get syncDemoArabicNote =>
-      'بإمكانك استخدام مؤشر حالة المزامنة للتعرف على حالة المزامنة الحالية بين التطبيق وخادم Supabase.';
-
-  @override
-  String syncDemoCurrentStatus(String status) {
-    return 'الحالة الحالية: $status';
-  }
-
-  @override
-  String syncDemoOnline(String value) {
-    return 'متصل: $value';
-  }
-
-  @override
-  String syncDemoLastSync(String time) {
-    return 'آخر مزامنة: $time';
-  }
-
-  @override
-  String get syncDemoOptionsTitle => 'خيارات المزامنة';
-
-  @override
-  String get syncDemoArabicOptionsHeading => 'خيارات المزامنة:';
-
-  @override
-  String get syncDemoArabicOptionsBody =>
-      'يمكنك مزامنة البيانات يدويًا أو ضبط المزامنة التلقائية';
-
-  @override
-  String get syncDemoOptionsHeading => 'خيارات المزامنة:';
-
-  @override
-  String get syncDemoOptionsBody =>
-      'يمكنك مزامنة البيانات يدويًا أو ضبط المزامنة التلقائية';
-
-  @override
-  String get syncDemoSyncNow => 'مزامنة الآن';
 }

@@ -44,797 +44,1556 @@
   "@errorStorage": {
     "description": "failure_message: local database write failed"
   },
-
   "commonLoading": "Loading...",
-  "@commonLoading": {"description": "Default LoadingIndicator/LoadingOverlay message; member list item name placeholder"},
+  "@commonLoading": {
+    "description": "Default LoadingIndicator/LoadingOverlay message; member list item name placeholder"
+  },
   "commonClose": "Close",
-  "@commonClose": {"description": "Close buttons: history details dialog, team invite placeholder dialog, API key created dialog, sync results dialog"},
+  "@commonClose": {
+    "description": "Close buttons: history details dialog, team invite placeholder dialog, API key created dialog, sync results dialog"
+  },
   "commonDelete": "Delete",
-  "@commonDelete": {"description": "Delete confirm buttons: team delete dialog, API key delete dialog and API key card button"},
+  "@commonDelete": {
+    "description": "Delete confirm buttons: team delete dialog, API key delete dialog and API key card button"
+  },
   "commonCreate": "Create",
-  "@commonCreate": {"description": "Create buttons: teams screen header, create team dialog, create API key dialog"},
+  "@commonCreate": {
+    "description": "Create buttons: teams screen header, create team dialog, create API key dialog"
+  },
   "commonOk": "OK",
-  "@commonOk": {"description": "custom_dialog.dart: CustomAlertDialog default confirm button text"},
+  "@commonOk": {
+    "description": "custom_dialog.dart: CustomAlertDialog default confirm button text"
+  },
   "commonUnknown": "Unknown",
-  "@commonUnknown": {"description": "Fallback country name: recent activity list, top countries chart, history item"},
+  "@commonUnknown": {
+    "description": "Fallback country name: recent activity list, top countries chart, history item"
+  },
   "commonErrorPrefix": "Error: {error}",
-  "@commonErrorPrefix": {"description": "Generic error prefix: teams error text and settings error snackbars", "placeholders": {"error": {"type": "String"}}},
+  "@commonErrorPrefix": {
+    "description": "Generic error prefix: teams error text and settings error snackbars",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "commonUserNotAuthenticated": "User not authenticated",
-  "@commonUserNotAuthenticated": {"description": "teams_viewmodel + subscription_viewmodel: error when no logged-in user"},
+  "@commonUserNotAuthenticated": {
+    "description": "teams_viewmodel + subscription_viewmodel: error when no logged-in user"
+  },
   "commonWhatsApp": "WhatsApp",
-  "@commonWhatsApp": {"description": "Platform label: home action button, dashboard stats/legend, activity and history badges, settings platform selector"},
+  "@commonWhatsApp": {
+    "description": "Platform label: home action button, dashboard stats/legend, activity and history badges, settings platform selector"
+  },
   "commonTelegram": "Telegram",
-  "@commonTelegram": {"description": "Platform label: home action button, dashboard stats/legend, activity and history badges, settings platform selector"},
+  "@commonTelegram": {
+    "description": "Platform label: home action button, dashboard stats/legend, activity and history badges, settings platform selector"
+  },
   "commonHome": "Home",
-  "@commonHome": {"description": "bottom_nav.dart: home tab label"},
+  "@commonHome": {
+    "description": "bottom_nav.dart: home tab label"
+  },
   "commonDashboard": "Dashboard",
-  "@commonDashboard": {"description": "bottom_nav tab label and dashboard screen app bar title"},
+  "@commonDashboard": {
+    "description": "bottom_nav tab label and dashboard screen app bar title"
+  },
   "commonHistory": "History",
-  "@commonHistory": {"description": "bottom_nav tab label and history screen app bar title"},
+  "@commonHistory": {
+    "description": "bottom_nav tab label and history screen app bar title"
+  },
   "commonTeams": "Teams",
-  "@commonTeams": {"description": "bottom_nav tab label and teams screen app bar title"},
+  "@commonTeams": {
+    "description": "bottom_nav tab label and teams screen app bar title"
+  },
   "commonSettings": "Settings",
-  "@commonSettings": {"description": "bottom_nav tab label, settings screen app bar title, team details tab label"},
+  "@commonSettings": {
+    "description": "bottom_nav tab label, settings screen app bar title, team details tab label"
+  },
   "commonLinkCopied": "Link copied to clipboard",
-  "@commonLinkCopied": {"description": "SnackBar after copying link: home result card, QR code widget, history details dialog"},
+  "@commonLinkCopied": {
+    "description": "SnackBar after copying link: home result card, QR code widget, history details dialog"
+  },
   "commonCopyLink": "Copy Link",
-  "@commonCopyLink": {"description": "Button: QR code widget and history details dialog"},
+  "@commonCopyLink": {
+    "description": "Button: QR code widget and history details dialog"
+  },
   "commonYes": "Yes",
-  "@commonYes": {"description": "sync_status_demo: online value when true"},
+  "@commonYes": {
+    "description": "sync_status_demo: online value when true"
+  },
   "commonNo": "No",
-  "@commonNo": {"description": "sync_status_demo: online value when false"},
+  "@commonNo": {
+    "description": "sync_status_demo: online value when false"
+  },
   "commonCreated": "Created",
-  "@commonCreated": {"description": "team_card info chip label and api_key_card info row label"},
+  "@commonCreated": {
+    "description": "team_card info chip label and api_key_card info row label"
+  },
   "commonPermissions": "Permissions",
-  "@commonPermissions": {"description": "api_key_card section header, create API key dialog header, settings profile permissions section title"},
+  "@commonPermissions": {
+    "description": "api_key_card section header, create API key dialog header, settings profile permissions section title"
+  },
   "commonDescriptionOptional": "Description (optional)",
-  "@commonDescriptionOptional": {"description": "Field label: create team dialog and create API key dialog"},
+  "@commonDescriptionOptional": {
+    "description": "Field label: create team dialog and create API key dialog"
+  },
   "commonViewHistory": "View History",
-  "@commonViewHistory": {"description": "API permission display name (api_key model) and settings profile permission item"},
-  "commonSyncing": "Syncing...",
-  "@commonSyncing": {"description": "home_screen sync status message and sync_status_widget in-progress message"},
+  "@commonViewHistory": {
+    "description": "API permission display name (api_key model) and settings profile permission item"
+  },
   "commonReady": "Ready",
-  "@commonReady": {"description": "sync_status_widget: message when no sync data yet"},
-  "commonSyncFailed": "Sync failed",
-  "@commonSyncFailed": {"description": "sync_status_widget: error state message"},
-  "commonOffline": "Offline",
-  "@commonOffline": {"description": "sync_status_widget: offline state message"},
-  "commonSynced": "Synced",
-  "@commonSynced": {"description": "sync_status_widget: success state message"},
-  "commonLastSynced": "Last synced: {time}",
-  "@commonLastSynced": {"description": "sync_status_widget subtitle", "placeholders": {"time": {"type": "String"}}},
-  "commonNotSynced": "Not synced yet",
-  "@commonNotSynced": {"description": "sync_status_widget subtitle when never synced"},
-  "commonLastSync": "Last sync: {time}",
-  "@commonLastSync": {"description": "sync_status_indicator subtitle", "placeholders": {"time": {"type": "String"}}},
+  "@commonReady": {
+    "description": "sync_status_widget: message when no sync data yet"
+  },
   "commonNever": "Never",
-  "@commonNever": {"description": "sync_status_indicator: fallback when no last sync time"},
+  "@commonNever": {
+    "description": "sync_status_indicator: fallback when no last sync time"
+  },
   "commonInitializing": "Initializing...",
-  "@commonInitializing": {"description": "sync_status_listener and sync demo default status message"},
-  "commonSyncNowTooltip": "Sync now",
-  "@commonSyncNowTooltip": {"description": "sync_status_widget: tooltip on sync icon button"},
+  "@commonInitializing": {
+    "description": "sync_status_listener and sync demo default status message"
+  },
   "commonPlatformLink": "{platformName} Link",
-  "@commonPlatformLink": {"description": "home: share subject and history details dialog title", "placeholders": {"platformName": {"type": "String"}}},
-
+  "@commonPlatformLink": {
+    "description": "home: share subject and history details dialog title",
+    "placeholders": {
+      "platformName": {
+        "type": "String"
+      }
+    }
+  },
   "splashTagline": "Convert phone numbers to chat links instantly",
-  "@splashTagline": {"description": "main.dart: splash screen tagline under app name"},
-
+  "@splashTagline": {
+    "description": "main.dart: splash screen tagline under app name"
+  },
   "homeTitle": "Convert Phone Numbers to Chat Links",
-  "@homeTitle": {"description": "home_screen: header title"},
+  "@homeTitle": {
+    "description": "home_screen: header title"
+  },
   "homeSubtitle": "Enter a phone number to create instant chat links for WhatsApp and Telegram",
-  "@homeSubtitle": {"description": "home_screen: header subtitle"},
+  "@homeSubtitle": {
+    "description": "home_screen: header subtitle"
+  },
   "homeGenerateQr": "Generate QR Code",
-  "@homeGenerateQr": {"description": "action_buttons.dart: QR outline button label"},
+  "@homeGenerateQr": {
+    "description": "action_buttons.dart: QR outline button label"
+  },
   "homeQrTitle": "{platformName} QR Code",
-  "@homeQrTitle": {"description": "home_screen: QR code widget title", "placeholders": {"platformName": {"type": "String"}}},
+  "@homeQrTitle": {
+    "description": "home_screen: QR code widget title",
+    "placeholders": {
+      "platformName": {
+        "type": "String"
+      }
+    }
+  },
   "homeLoading": "Generating link...",
-  "@homeLoading": {"description": "home_screen: loading overlay message"},
+  "@homeLoading": {
+    "description": "home_screen: loading overlay message"
+  },
   "homePhoneLabel": "Phone Number",
-  "@homePhoneLabel": {"description": "phone_input_field: section label"},
+  "@homePhoneLabel": {
+    "description": "phone_input_field: section label"
+  },
   "homePhoneHint": "Enter phone number",
-  "@homePhoneHint": {"description": "phone_input_field: input hint"},
+  "@homePhoneHint": {
+    "description": "phone_input_field: input hint"
+  },
   "homePasteTooltip": "Paste phone number",
-  "@homePasteTooltip": {"description": "phone_input_field: tooltip on paste icon button"},
+  "@homePasteTooltip": {
+    "description": "phone_input_field: tooltip on paste icon button"
+  },
   "homePasteButton": "Paste Full Number",
-  "@homePasteButton": {"description": "phone_input_field: paste full number button"},
+  "@homePasteButton": {
+    "description": "phone_input_field: paste full number button"
+  },
   "homeResultTitle": "Your {platformName} Link",
-  "@homeResultTitle": {"description": "link_result_card: card title", "placeholders": {"platformName": {"type": "String"}}},
+  "@homeResultTitle": {
+    "description": "link_result_card: card title",
+    "placeholders": {
+      "platformName": {
+        "type": "String"
+      }
+    }
+  },
   "homeCopyTooltip": "Copy link",
-  "@homeCopyTooltip": {"description": "link_result_card: tooltip on copy icon button"},
+  "@homeCopyTooltip": {
+    "description": "link_result_card: tooltip on copy icon button"
+  },
   "homeActionQr": "QR Code",
-  "@homeActionQr": {"description": "link_result_card: QR Code action button"},
+  "@homeActionQr": {
+    "description": "link_result_card: QR Code action button"
+  },
   "homeActionShare": "Share",
-  "@homeActionShare": {"description": "link_result_card: Share action button"},
+  "@homeActionShare": {
+    "description": "link_result_card: Share action button"
+  },
   "homeActionOpen": "Open",
-  "@homeActionOpen": {"description": "link_result_card: Open action button"},
+  "@homeActionOpen": {
+    "description": "link_result_card: Open action button"
+  },
   "homeQrShare": "Share QR",
-  "@homeQrShare": {"description": "qr_code_widget: share QR button"},
+  "@homeQrShare": {
+    "description": "qr_code_widget: share QR button"
+  },
   "homeQrShareTitle": "Share QR Code for {title}",
-  "@homeQrShareTitle": {"description": "qr_code_widget: share subject when sharing QR image", "placeholders": {"title": {"type": "String"}}},
+  "@homeQrShareTitle": {
+    "description": "qr_code_widget: share subject when sharing QR image",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
   "homeInvalidNumber": "Please enter a valid phone number",
-  "@homeInvalidNumber": {"description": "home_viewmodel: invalid phone number error"},
+  "@homeInvalidNumber": {
+    "description": "home_viewmodel: invalid phone number error"
+  },
   "homeErrorGenerating": "Error generating link: {error}",
-  "@homeErrorGenerating": {"description": "home_viewmodel: error shown when link generation fails", "placeholders": {"error": {"type": "String"}}},
+  "@homeErrorGenerating": {
+    "description": "home_viewmodel: error shown when link generation fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "homeGuestLimit": "Guest users can only generate 2 links. Please register or login to continue.",
-  "@homeGuestLimit": {"description": "home_viewmodel: guest link limit error"},
-
+  "@homeGuestLimit": {
+    "description": "home_viewmodel: guest link limit error"
+  },
   "dashboardLoading": "Loading dashboard data...",
-  "@dashboardLoading": {"description": "dashboard_screen: loading message"},
+  "@dashboardLoading": {
+    "description": "dashboard_screen: loading message"
+  },
   "dashboardTotalLinks": "Total Links Generated",
-  "@dashboardTotalLinks": {"description": "dashboard_screen: summary card label"},
+  "@dashboardTotalLinks": {
+    "description": "dashboard_screen: summary card label"
+  },
   "dashboardStatsTitle": "Platform Statistics",
-  "@dashboardStatsTitle": {"description": "dashboard_screen: statistics section header"},
+  "@dashboardStatsTitle": {
+    "description": "dashboard_screen: statistics section header"
+  },
   "dashboardDistribution": "Platform Distribution",
-  "@dashboardDistribution": {"description": "dashboard_screen: distribution bar title"},
+  "@dashboardDistribution": {
+    "description": "dashboard_screen: distribution bar title"
+  },
   "dashboardLegendCount": "({count})",
-  "@dashboardLegendCount": {"description": "dashboard_screen: legend count in parentheses", "placeholders": {"count": {"type": "num"}}},
+  "@dashboardLegendCount": {
+    "description": "dashboard_screen: legend count in parentheses",
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
   "dashboardRecentActivity": "Recent Activity",
-  "@dashboardRecentActivity": {"description": "recent_activity_list: section title"},
+  "@dashboardRecentActivity": {
+    "description": "recent_activity_list: section title"
+  },
   "dashboardNoActivity": "No recent activity",
-  "@dashboardNoActivity": {"description": "recent_activity_list: empty state text"},
+  "@dashboardNoActivity": {
+    "description": "recent_activity_list: empty state text"
+  },
   "dashboardTopCountries": "Top Countries",
-  "@dashboardTopCountries": {"description": "top_countries_chart: section title"},
+  "@dashboardTopCountries": {
+    "description": "top_countries_chart: section title"
+  },
   "dashboardNoData": "No data available yet",
-  "@dashboardNoData": {"description": "top_countries_chart: empty state text"},
+  "@dashboardNoData": {
+    "description": "top_countries_chart: empty state text"
+  },
   "dashboardError": "Error loading dashboard data: {error}",
-  "@dashboardError": {"description": "dashboard_viewmodel: error state message", "placeholders": {"error": {"type": "String"}}},
-
+  "@dashboardError": {
+    "description": "dashboard_viewmodel: error state message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "historyLoading": "Loading history...",
-  "@historyLoading": {"description": "history_screen: loading message"},
+  "@historyLoading": {
+    "description": "history_screen: loading message"
+  },
   "historyEmpty": "No history yet",
-  "@historyEmpty": {"description": "history_screen: empty state title"},
+  "@historyEmpty": {
+    "description": "history_screen: empty state title"
+  },
   "historyEmptyHint": "Links you generate will appear here",
-  "@historyEmptyHint": {"description": "history_screen: empty state subtitle"},
+  "@historyEmptyHint": {
+    "description": "history_screen: empty state subtitle"
+  },
   "historyDetailsPhone": "Phone Number:",
-  "@historyDetailsPhone": {"description": "history_screen: details dialog field label"},
+  "@historyDetailsPhone": {
+    "description": "history_screen: details dialog field label"
+  },
   "historyDetailsCountry": "Country:",
-  "@historyDetailsCountry": {"description": "history_screen: details dialog field label"},
+  "@historyDetailsCountry": {
+    "description": "history_screen: details dialog field label"
+  },
   "historyDetailsGenerated": "Generated on:",
-  "@historyDetailsGenerated": {"description": "history_screen: details dialog field label"},
+  "@historyDetailsGenerated": {
+    "description": "history_screen: details dialog field label"
+  },
   "historyDetailsLink": "Link:",
-  "@historyDetailsLink": {"description": "history_screen: details dialog field label"},
+  "@historyDetailsLink": {
+    "description": "history_screen: details dialog field label"
+  },
   "historyOpenLink": "Open Link",
-  "@historyOpenLink": {"description": "history_screen: details dialog action button"},
+  "@historyOpenLink": {
+    "description": "history_screen: details dialog action button"
+  },
   "historyClearTitle": "Clear History",
-  "@historyClearTitle": {"description": "history_screen: clear history dialog title"},
+  "@historyClearTitle": {
+    "description": "history_screen: clear history dialog title"
+  },
   "historyClearMessage": "Are you sure you want to clear all history? This action cannot be undone.",
-  "@historyClearMessage": {"description": "history_screen: clear history dialog message"},
+  "@historyClearMessage": {
+    "description": "history_screen: clear history dialog message"
+  },
   "historyClearConfirm": "Clear",
-  "@historyClearConfirm": {"description": "history_screen: clear history confirm button"},
+  "@historyClearConfirm": {
+    "description": "history_screen: clear history confirm button"
+  },
   "historyErrorLoad": "Failed to load history: {error}",
-  "@historyErrorLoad": {"description": "history_viewmodel: load error state message", "placeholders": {"error": {"type": "String"}}},
+  "@historyErrorLoad": {
+    "description": "history_viewmodel: load error state message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "historyErrorClear": "Failed to clear history: {error}",
-  "@historyErrorClear": {"description": "history_viewmodel: clear error state message", "placeholders": {"error": {"type": "String"}}},
-
+  "@historyErrorClear": {
+    "description": "history_viewmodel: clear error state message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "teamsLoading": "Loading teams...",
-  "@teamsLoading": {"description": "teams_screen: loading message"},
+  "@teamsLoading": {
+    "description": "teams_screen: loading message"
+  },
   "teamsEmpty": "No teams yet",
-  "@teamsEmpty": {"description": "teams_screen: empty state title"},
+  "@teamsEmpty": {
+    "description": "teams_screen: empty state title"
+  },
   "teamsEmptyHint": "Create a team to collaborate with others",
-  "@teamsEmptyHint": {"description": "teams_screen: empty state subtitle"},
+  "@teamsEmptyHint": {
+    "description": "teams_screen: empty state subtitle"
+  },
   "teamsCreateTeam": "Create Team",
-  "@teamsCreateTeam": {"description": "teams_screen: empty state button"},
+  "@teamsCreateTeam": {
+    "description": "teams_screen: empty state button"
+  },
   "teamsYourTeams": "Your Teams",
-  "@teamsYourTeams": {"description": "teams_screen: list section title"},
+  "@teamsYourTeams": {
+    "description": "teams_screen: list section title"
+  },
   "teamsUpgradeHint": "Upgrade to a premium plan to create teams and collaborate with others",
-  "@teamsUpgradeHint": {"description": "teams_screen: upgrade prompt for free users"},
+  "@teamsUpgradeHint": {
+    "description": "teams_screen: upgrade prompt for free users"
+  },
   "teamsEditTeam": "Edit Team",
-  "@teamsEditTeam": {"description": "team_details_screen: popup menu item"},
+  "@teamsEditTeam": {
+    "description": "team_details_screen: popup menu item"
+  },
   "teamsDeleteTeam": "Delete Team",
-  "@teamsDeleteTeam": {"description": "team_details_screen: popup menu item, danger zone title, delete dialog title"},
+  "@teamsDeleteTeam": {
+    "description": "team_details_screen: popup menu item, danger zone title, delete dialog title"
+  },
   "teamsLoadingDetails": "Loading team details...",
-  "@teamsLoadingDetails": {"description": "team_details_screen: loading message"},
+  "@teamsLoadingDetails": {
+    "description": "team_details_screen: loading message"
+  },
   "teamsMembers": "Members",
-  "@teamsMembers": {"description": "team_details_screen tab label and team_card info chip label"},
+  "@teamsMembers": {
+    "description": "team_details_screen tab label and team_card info chip label"
+  },
   "teamsTabAnalytics": "Analytics",
-  "@teamsTabAnalytics": {"description": "team_details_screen: tab label"},
+  "@teamsTabAnalytics": {
+    "description": "team_details_screen: tab label"
+  },
   "teamsMembersCount": "{count, plural, =1{1 member} other{{count} members}}",
-  "@teamsMembersCount": {"description": "team_details_screen: member count in team header", "placeholders": {"count": {"type": "num"}}},
+  "@teamsMembersCount": {
+    "description": "team_details_screen: member count in team header",
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
   "teamsCreated": "Created {date}",
-  "@teamsCreated": {"description": "team_details_screen: creation date prefix in header", "placeholders": {"date": {"type": "String"}}},
+  "@teamsCreated": {
+    "description": "team_details_screen: creation date prefix in header",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
   "teamsOwner": "Owner",
-  "@teamsOwner": {"description": "team_card: owner label under team name"},
+  "@teamsOwner": {
+    "description": "team_card: owner label under team name"
+  },
   "teamsToday": "Today",
-  "@teamsToday": {"description": "team_card/team_details: relative date for today"},
+  "@teamsToday": {
+    "description": "team_card/team_details: relative date for today"
+  },
   "teamsYesterday": "Yesterday",
-  "@teamsYesterday": {"description": "team_card/team_details: relative date for yesterday"},
+  "@teamsYesterday": {
+    "description": "team_card/team_details: relative date for yesterday"
+  },
   "teamsDaysAgo": "{count} days ago",
-  "@teamsDaysAgo": {"description": "team_card/team_details: relative date in days", "placeholders": {"count": {"type": "num"}}},
+  "@teamsDaysAgo": {
+    "description": "team_card/team_details: relative date in days",
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
   "teamsWeeksAgo": "{count, plural, =1{1 week ago} other{{count} weeks ago}}",
-  "@teamsWeeksAgo": {"description": "team_card/team_details: relative date in weeks", "placeholders": {"count": {"type": "num"}}},
+  "@teamsWeeksAgo": {
+    "description": "team_card/team_details: relative date in weeks",
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
   "teamsMonthsAgo": "{count, plural, =1{1 month ago} other{{count} months ago}}",
-  "@teamsMonthsAgo": {"description": "team_card/team_details: relative date in months", "placeholders": {"count": {"type": "num"}}},
+  "@teamsMonthsAgo": {
+    "description": "team_card/team_details: relative date in months",
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
   "teamsYearsAgo": "{count, plural, =1{1 year ago} other{{count} years ago}}",
-  "@teamsYearsAgo": {"description": "team_card/team_details: relative date in years", "placeholders": {"count": {"type": "num"}}},
+  "@teamsYearsAgo": {
+    "description": "team_card/team_details: relative date in years",
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
   "teamsInviteMember": "Invite Member",
-  "@teamsInviteMember": {"description": "team_details_screen: invite member button and placeholder dialog title"},
+  "@teamsInviteMember": {
+    "description": "team_details_screen: invite member button and placeholder dialog title"
+  },
   "teamsAnalyticsComingSoon": "Team analytics coming soon",
-  "@teamsAnalyticsComingSoon": {"description": "team_details_screen: analytics tab placeholder"},
+  "@teamsAnalyticsComingSoon": {
+    "description": "team_details_screen: analytics tab placeholder"
+  },
   "teamsSettingsTitle": "Team Settings",
-  "@teamsSettingsTitle": {"description": "team_details_screen: settings tab section title"},
+  "@teamsSettingsTitle": {
+    "description": "team_details_screen: settings tab section title"
+  },
   "teamsAllowInviteTitle": "Allow Members to Invite",
-  "@teamsAllowInviteTitle": {"description": "team_details_screen: settings switch title"},
+  "@teamsAllowInviteTitle": {
+    "description": "team_details_screen: settings switch title"
+  },
   "teamsAllowInviteSubtitle": "Let members with editor role or higher invite new members",
-  "@teamsAllowInviteSubtitle": {"description": "team_details_screen: settings switch subtitle"},
+  "@teamsAllowInviteSubtitle": {
+    "description": "team_details_screen: settings switch subtitle"
+  },
   "teamsRequireApprovalTitle": "Require Approval for Links",
-  "@teamsRequireApprovalTitle": {"description": "team_details_screen: settings switch title"},
+  "@teamsRequireApprovalTitle": {
+    "description": "team_details_screen: settings switch title"
+  },
   "teamsRequireApprovalSubtitle": "Links created by members will require admin approval",
-  "@teamsRequireApprovalSubtitle": {"description": "team_details_screen: settings switch subtitle"},
+  "@teamsRequireApprovalSubtitle": {
+    "description": "team_details_screen: settings switch subtitle"
+  },
   "teamsDangerZone": "Danger Zone",
-  "@teamsDangerZone": {"description": "team_details_screen: danger zone section header"},
+  "@teamsDangerZone": {
+    "description": "team_details_screen: danger zone section header"
+  },
   "teamsDeleteWarning": "Once you delete a team, there is no going back. Please be certain.",
-  "@teamsDeleteWarning": {"description": "team_details_screen: danger zone warning text"},
+  "@teamsDeleteWarning": {
+    "description": "team_details_screen: danger zone warning text"
+  },
   "teamsDeleteThisTeam": "Delete this team",
-  "@teamsDeleteThisTeam": {"description": "team_details_screen: danger zone delete button"},
+  "@teamsDeleteThisTeam": {
+    "description": "team_details_screen: danger zone delete button"
+  },
   "teamsDeleteConfirmMessage": "Are you sure you want to delete this team? This action cannot be undone.",
-  "@teamsDeleteConfirmMessage": {"description": "team_details_screen: delete team dialog message"},
+  "@teamsDeleteConfirmMessage": {
+    "description": "team_details_screen: delete team dialog message"
+  },
   "teamsInviteDialogPlaceholder": "Invite member dialog will be implemented here",
-  "@teamsInviteDialogPlaceholder": {"description": "team_details_screen: placeholder invite dialog body"},
+  "@teamsInviteDialogPlaceholder": {
+    "description": "team_details_screen: placeholder invite dialog body"
+  },
   "teamsCreateDialogTitle": "Create a Team",
-  "@teamsCreateDialogTitle": {"description": "create_team_dialog: dialog title"},
+  "@teamsCreateDialogTitle": {
+    "description": "create_team_dialog: dialog title"
+  },
   "teamsNameLabel": "Team Name",
-  "@teamsNameLabel": {"description": "create_team_dialog: name field label"},
+  "@teamsNameLabel": {
+    "description": "create_team_dialog: name field label"
+  },
   "teamsNameRequired": "Please enter a team name",
-  "@teamsNameRequired": {"description": "create_team_dialog: name field validator"},
+  "@teamsNameRequired": {
+    "description": "create_team_dialog: name field validator"
+  },
   "teamsCreateDialogHint": "Create a team to collaborate with others. You can invite team members after creating the team.",
-  "@teamsCreateDialogHint": {"description": "create_team_dialog: helper text"},
+  "@teamsCreateDialogHint": {
+    "description": "create_team_dialog: helper text"
+  },
   "teamsInviteTeamMember": "Invite Team Member",
-  "@teamsInviteTeamMember": {"description": "invite_member_dialog: dialog title"},
+  "@teamsInviteTeamMember": {
+    "description": "invite_member_dialog: dialog title"
+  },
   "teamsEmailLabel": "Email Address",
-  "@teamsEmailLabel": {"description": "invite_member_dialog: email field label"},
+  "@teamsEmailLabel": {
+    "description": "invite_member_dialog: email field label"
+  },
   "teamsEmailHint": "Enter member's email",
-  "@teamsEmailHint": {"description": "invite_member_dialog: email field hint"},
+  "@teamsEmailHint": {
+    "description": "invite_member_dialog: email field hint"
+  },
   "teamsEmailRequired": "Please enter an email address",
-  "@teamsEmailRequired": {"description": "invite_member_dialog: email validator"},
+  "@teamsEmailRequired": {
+    "description": "invite_member_dialog: email validator"
+  },
   "teamsEmailInvalid": "Please enter a valid email address",
-  "@teamsEmailInvalid": {"description": "invite_member_dialog: email validator"},
+  "@teamsEmailInvalid": {
+    "description": "invite_member_dialog: email validator"
+  },
   "teamsMatchingUsers": "Matching Users:",
-  "@teamsMatchingUsers": {"description": "invite_member_dialog: user search results header"},
+  "@teamsMatchingUsers": {
+    "description": "invite_member_dialog: user search results header"
+  },
   "teamsSelectRole": "Select Role:",
-  "@teamsSelectRole": {"description": "invite_member_dialog: role selector header"},
+  "@teamsSelectRole": {
+    "description": "invite_member_dialog: role selector header"
+  },
   "teamsRolePermissions": "Role Permissions:",
-  "@teamsRolePermissions": {"description": "invite_member_dialog: role permissions header"},
+  "@teamsRolePermissions": {
+    "description": "invite_member_dialog: role permissions header"
+  },
   "teamsRoleAdmin": "Admin",
-  "@teamsRoleAdmin": {"description": "invite_member_dialog: admin role chip"},
+  "@teamsRoleAdmin": {
+    "description": "invite_member_dialog: admin role chip"
+  },
   "teamsRoleEditor": "Editor",
-  "@teamsRoleEditor": {"description": "invite_member_dialog: editor role chip"},
+  "@teamsRoleEditor": {
+    "description": "invite_member_dialog: editor role chip"
+  },
   "teamsRoleViewer": "Viewer",
-  "@teamsRoleViewer": {"description": "invite_member_dialog: viewer role chip"},
+  "@teamsRoleViewer": {
+    "description": "invite_member_dialog: viewer role chip"
+  },
   "teamsInvite": "Invite",
-  "@teamsInvite": {"description": "invite_member_dialog: invite confirm button"},
+  "@teamsInvite": {
+    "description": "invite_member_dialog: invite confirm button"
+  },
   "teamsRoleAdminDesc": "Can manage team settings, members, and view all data.",
-  "@teamsRoleAdminDesc": {"description": "invite_member_dialog: admin role description"},
+  "@teamsRoleAdminDesc": {
+    "description": "invite_member_dialog: admin role description"
+  },
   "teamsRoleEditorDesc": "Can create and edit links, but cannot manage the team.",
-  "@teamsRoleEditorDesc": {"description": "invite_member_dialog: editor role description"},
+  "@teamsRoleEditorDesc": {
+    "description": "invite_member_dialog: editor role description"
+  },
   "teamsRoleViewerDesc": "Can only view team data. Cannot create or edit links.",
-  "@teamsRoleViewerDesc": {"description": "invite_member_dialog: viewer role description"},
+  "@teamsRoleViewerDesc": {
+    "description": "invite_member_dialog: viewer role description"
+  },
   "teamsInviteNoUser": "No user found with this email address.",
-  "@teamsInviteNoUser": {"description": "invite_member_dialog: error when user not found"},
+  "@teamsInviteNoUser": {
+    "description": "invite_member_dialog: error when user not found"
+  },
   "teamsInviteAlreadyMember": "This user is already a member of the team.",
-  "@teamsInviteAlreadyMember": {"description": "invite_member_dialog: error when user already member"},
+  "@teamsInviteAlreadyMember": {
+    "description": "invite_member_dialog: error when user already member"
+  },
   "teamsInviteError": "Error inviting user: {error}",
-  "@teamsInviteError": {"description": "invite_member_dialog: error message", "placeholders": {"error": {"type": "String"}}},
+  "@teamsInviteError": {
+    "description": "invite_member_dialog: error message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "teamsUnknownUser": "Unknown User",
-  "@teamsUnknownUser": {"description": "member_list_item: fallback user name"},
+  "@teamsUnknownUser": {
+    "description": "member_list_item: fallback user name"
+  },
   "teamsYouBadge": "YOU",
-  "@teamsYouBadge": {"description": "member_list_item: badge for current user"},
+  "@teamsYouBadge": {
+    "description": "member_list_item: badge for current user"
+  },
   "teamsRoleOwnerBadge": "OWNER",
-  "@teamsRoleOwnerBadge": {"description": "member_list_item: owner role badge"},
+  "@teamsRoleOwnerBadge": {
+    "description": "member_list_item: owner role badge"
+  },
   "teamsRoleAdminBadge": "ADMIN",
-  "@teamsRoleAdminBadge": {"description": "member_list_item: admin role badge"},
+  "@teamsRoleAdminBadge": {
+    "description": "member_list_item: admin role badge"
+  },
   "teamsRoleEditorBadge": "EDITOR",
-  "@teamsRoleEditorBadge": {"description": "member_list_item: editor role badge"},
+  "@teamsRoleEditorBadge": {
+    "description": "member_list_item: editor role badge"
+  },
   "teamsRoleViewerBadge": "VIEWER",
-  "@teamsRoleViewerBadge": {"description": "member_list_item: viewer role badge"},
+  "@teamsRoleViewerBadge": {
+    "description": "member_list_item: viewer role badge"
+  },
   "teamsMakeAdmin": "Make Admin",
-  "@teamsMakeAdmin": {"description": "member_list_item: popup menu item"},
+  "@teamsMakeAdmin": {
+    "description": "member_list_item: popup menu item"
+  },
   "teamsMakeEditor": "Make Editor",
-  "@teamsMakeEditor": {"description": "member_list_item: popup menu item"},
+  "@teamsMakeEditor": {
+    "description": "member_list_item: popup menu item"
+  },
   "teamsMakeViewer": "Make Viewer",
-  "@teamsMakeViewer": {"description": "member_list_item: popup menu item"},
+  "@teamsMakeViewer": {
+    "description": "member_list_item: popup menu item"
+  },
   "teamsRemoveFromTeam": "Remove from Team",
-  "@teamsRemoveFromTeam": {"description": "member_list_item: popup menu item"},
+  "@teamsRemoveFromTeam": {
+    "description": "member_list_item: popup menu item"
+  },
   "teamsRemoveTitle": "Remove Member",
-  "@teamsRemoveTitle": {"description": "member_list_item: remove member dialog title"},
+  "@teamsRemoveTitle": {
+    "description": "member_list_item: remove member dialog title"
+  },
   "teamsRemoveMessage": "Are you sure you want to remove {memberName} from the team?",
-  "@teamsRemoveMessage": {"description": "member_list_item: remove member dialog message (fallback name: this member)", "placeholders": {"memberName": {"type": "String"}}},
+  "@teamsRemoveMessage": {
+    "description": "member_list_item: remove member dialog message (fallback name: this member)",
+    "placeholders": {
+      "memberName": {
+        "type": "String"
+      }
+    }
+  },
   "teamsRemove": "Remove",
-  "@teamsRemove": {"description": "member_list_item: remove confirm button"},
+  "@teamsRemove": {
+    "description": "member_list_item: remove confirm button"
+  },
   "teamsErrorLoad": "Failed to load teams: {error}",
-  "@teamsErrorLoad": {"description": "teams_viewmodel: load teams error (shown via commonErrorPrefix)", "placeholders": {"error": {"type": "String"}}},
+  "@teamsErrorLoad": {
+    "description": "teams_viewmodel: load teams error (shown via commonErrorPrefix)",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "teamsErrorNotAllowed": "Your subscription does not allow creating teams",
-  "@teamsErrorNotAllowed": {"description": "teams_viewmodel: subscription tier error"},
+  "@teamsErrorNotAllowed": {
+    "description": "teams_viewmodel: subscription tier error"
+  },
   "teamsErrorCreate": "Failed to create team",
-  "@teamsErrorCreate": {"description": "teams_viewmodel: create team failure"},
+  "@teamsErrorCreate": {
+    "description": "teams_viewmodel: create team failure"
+  },
   "teamsErrorCreateDetails": "Failed to create team: {error}",
-  "@teamsErrorCreateDetails": {"description": "teams_viewmodel: create team exception error", "placeholders": {"error": {"type": "String"}}},
+  "@teamsErrorCreateDetails": {
+    "description": "teams_viewmodel: create team exception error",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "teamsErrorDelete": "Failed to delete team",
-  "@teamsErrorDelete": {"description": "teams_viewmodel: delete team failure"},
+  "@teamsErrorDelete": {
+    "description": "teams_viewmodel: delete team failure"
+  },
   "teamsErrorDeleteDetails": "Failed to delete team: {error}",
-  "@teamsErrorDeleteDetails": {"description": "teams_viewmodel: delete team exception error", "placeholders": {"error": {"type": "String"}}},
-
+  "@teamsErrorDeleteDetails": {
+    "description": "teams_viewmodel: delete team exception error",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "apiTitle": "API Keys",
-  "@apiTitle": {"description": "api_keys_screen app bar title and settings action card title"},
+  "@apiTitle": {
+    "description": "api_keys_screen app bar title and settings action card title"
+  },
   "apiLoading": "Loading API keys...",
-  "@apiLoading": {"description": "api_keys_screen: loading message"},
+  "@apiLoading": {
+    "description": "api_keys_screen: loading message"
+  },
   "apiEmptyTitle": "No API Keys Yet",
-  "@apiEmptyTitle": {"description": "api_keys_screen: empty state title"},
+  "@apiEmptyTitle": {
+    "description": "api_keys_screen: empty state title"
+  },
   "apiEmptyHint": "Create an API key to integrate with external services",
-  "@apiEmptyHint": {"description": "api_keys_screen: empty state subtitle"},
+  "@apiEmptyHint": {
+    "description": "api_keys_screen: empty state subtitle"
+  },
   "apiCreateKey": "Create API Key",
-  "@apiCreateKey": {"description": "api_keys_screen: empty state button and create API key dialog title"},
+  "@apiCreateKey": {
+    "description": "api_keys_screen: empty state button and create API key dialog title"
+  },
   "apiYourKeys": "Your API Keys",
-  "@apiYourKeys": {"description": "api_keys_screen: list section title"},
+  "@apiYourKeys": {
+    "description": "api_keys_screen: list section title"
+  },
   "apiKeysSubtitle": "Use these keys to access the Link2Chat API",
-  "@apiKeysSubtitle": {"description": "api_keys_screen: list section subtitle"},
+  "@apiKeysSubtitle": {
+    "description": "api_keys_screen: list section subtitle"
+  },
   "apiDocsTitle": "API Documentation",
-  "@apiDocsTitle": {"description": "api_keys_screen: documentation expansion tile title"},
+  "@apiDocsTitle": {
+    "description": "api_keys_screen: documentation expansion tile title"
+  },
   "apiDocsBaseUrlHeading": "Base URL",
-  "@apiDocsBaseUrlHeading": {"description": "api_keys_screen: docs section heading"},
+  "@apiDocsBaseUrlHeading": {
+    "description": "api_keys_screen: docs section heading"
+  },
   "apiDocsAuthHeading": "Authentication",
-  "@apiDocsAuthHeading": {"description": "api_keys_screen: docs section heading"},
+  "@apiDocsAuthHeading": {
+    "description": "api_keys_screen: docs section heading"
+  },
   "apiDocsAuthBody": "Add your API key to the request headers:\nX-API-Key: your_api_key",
-  "@apiDocsAuthBody": {"description": "api_keys_screen: docs authentication instructions"},
+  "@apiDocsAuthBody": {
+    "description": "api_keys_screen: docs authentication instructions"
+  },
   "apiDocsEndpointsHeading": "Endpoints",
-  "@apiDocsEndpointsHeading": {"description": "api_keys_screen: docs section heading"},
+  "@apiDocsEndpointsHeading": {
+    "description": "api_keys_screen: docs section heading"
+  },
   "apiDocGetLinks": "• GET /links - Get your link history",
-  "@apiDocGetLinks": {"description": "api_keys_screen: docs endpoint line"},
+  "@apiDocGetLinks": {
+    "description": "api_keys_screen: docs endpoint line"
+  },
   "apiDocPostLinks": "• POST /links - Generate a new link",
-  "@apiDocPostLinks": {"description": "api_keys_screen: docs endpoint line"},
+  "@apiDocPostLinks": {
+    "description": "api_keys_screen: docs endpoint line"
+  },
   "apiDocGetAnalytics": "• GET /analytics - Get usage statistics",
-  "@apiDocGetAnalytics": {"description": "api_keys_screen: docs endpoint line"},
+  "@apiDocGetAnalytics": {
+    "description": "api_keys_screen: docs endpoint line"
+  },
   "apiDocGetTeams": "• GET /teams - List your teams",
-  "@apiDocGetTeams": {"description": "api_keys_screen: docs endpoint line"},
+  "@apiDocGetTeams": {
+    "description": "api_keys_screen: docs endpoint line"
+  },
   "apiDocsPortal": "For detailed documentation, visit our developer portal.",
-  "@apiDocsPortal": {"description": "api_keys_screen: docs footer note"},
+  "@apiDocsPortal": {
+    "description": "api_keys_screen: docs footer note"
+  },
   "apiLockedTitle": "API Access Locked",
-  "@apiLockedTitle": {"description": "api_keys_screen: upgrade prompt title"},
+  "@apiLockedTitle": {
+    "description": "api_keys_screen: upgrade prompt title"
+  },
   "apiLockedMessage": "API access is available on Professional and Enterprise plans.",
-  "@apiLockedMessage": {"description": "api_keys_screen: upgrade prompt message"},
+  "@apiLockedMessage": {
+    "description": "api_keys_screen: upgrade prompt message"
+  },
   "apiUpgradePlan": "Upgrade Your Plan",
-  "@apiUpgradePlan": {"description": "api_keys_screen: upgrade prompt button"},
+  "@apiUpgradePlan": {
+    "description": "api_keys_screen: upgrade prompt button"
+  },
   "apiKeyCreatedTitle": "API Key Created",
-  "@apiKeyCreatedTitle": {"description": "api_keys_screen: key created dialog title"},
+  "@apiKeyCreatedTitle": {
+    "description": "api_keys_screen: key created dialog title"
+  },
   "apiKeyCreatedWarning": "Copy this key now. For security reasons, you won't be able to see it again.",
-  "@apiKeyCreatedWarning": {"description": "api_keys_screen: key created dialog warning"},
+  "@apiKeyCreatedWarning": {
+    "description": "api_keys_screen: key created dialog warning"
+  },
   "apiCopyTooltip": "Copy to clipboard",
-  "@apiCopyTooltip": {"description": "api_keys_screen + api_key_card: tooltip on copy icon button"},
+  "@apiCopyTooltip": {
+    "description": "api_keys_screen + api_key_card: tooltip on copy icon button"
+  },
   "apiDeleteKeyTitle": "Delete API Key",
-  "@apiDeleteKeyTitle": {"description": "api_keys_screen: delete key dialog title"},
+  "@apiDeleteKeyTitle": {
+    "description": "api_keys_screen: delete key dialog title"
+  },
   "apiDeleteKeyMessage": "Are you sure you want to delete the API key \"{keyName}\"? This action cannot be undone.",
-  "@apiDeleteKeyMessage": {"description": "api_keys_screen: delete key dialog message", "placeholders": {"keyName": {"type": "String"}}},
+  "@apiDeleteKeyMessage": {
+    "description": "api_keys_screen: delete key dialog message",
+    "placeholders": {
+      "keyName": {
+        "type": "String"
+      }
+    }
+  },
   "apiCopied": "API key copied to clipboard",
-  "@apiCopied": {"description": "api_keys_screen: snackbar after copying key"},
+  "@apiCopied": {
+    "description": "api_keys_screen: snackbar after copying key"
+  },
   "apiKeyNameLabel": "Key Name",
-  "@apiKeyNameLabel": {"description": "create_api_key_dialog: name field label"},
+  "@apiKeyNameLabel": {
+    "description": "create_api_key_dialog: name field label"
+  },
   "apiKeyNameHint": "e.g. Mobile App Integration",
-  "@apiKeyNameHint": {"description": "create_api_key_dialog: name field hint"},
+  "@apiKeyNameHint": {
+    "description": "create_api_key_dialog: name field hint"
+  },
   "apiKeyNameRequired": "Please enter a name for your API key",
-  "@apiKeyNameRequired": {"description": "create_api_key_dialog: name validator"},
+  "@apiKeyNameRequired": {
+    "description": "create_api_key_dialog: name validator"
+  },
   "apiKeyDescriptionHint": "e.g. Used for mobile app integration",
-  "@apiKeyDescriptionHint": {"description": "create_api_key_dialog: description field hint"},
+  "@apiKeyDescriptionHint": {
+    "description": "create_api_key_dialog: description field hint"
+  },
   "apiKeySecurityNote": "Security Note:",
-  "@apiKeySecurityNote": {"description": "create_api_key_dialog: security note heading"},
+  "@apiKeySecurityNote": {
+    "description": "create_api_key_dialog: security note heading"
+  },
   "apiKeySecurityWarning": "Your API key provides access to your account data. Never share your API keys and only grant the permissions necessary for each integration.",
-  "@apiKeySecurityWarning": {"description": "create_api_key_dialog: security note body"},
+  "@apiKeySecurityWarning": {
+    "description": "create_api_key_dialog: security note body"
+  },
   "apiKeySelectPermission": "Please select at least one permission",
-  "@apiKeySelectPermission": {"description": "create_api_key_dialog: snackbar when no permission selected"},
+  "@apiKeySelectPermission": {
+    "description": "create_api_key_dialog: snackbar when no permission selected"
+  },
   "apiKeyLabel": "API Key",
-  "@apiKeyLabel": {"description": "api_key_card: key value section label"},
+  "@apiKeyLabel": {
+    "description": "api_key_card: key value section label"
+  },
   "apiLastUsed": "Last used",
-  "@apiLastUsed": {"description": "api_key_card: info row label"},
+  "@apiLastUsed": {
+    "description": "api_key_card: info row label"
+  },
   "apiPermissionGenerateLinks": "Generate Links",
-  "@apiPermissionGenerateLinks": {"description": "API permission display name (api_key model, shown as chips and checkboxes)"},
+  "@apiPermissionGenerateLinks": {
+    "description": "API permission display name (api_key model, shown as chips and checkboxes)"
+  },
   "apiPermissionGenerateLinksDesc": "Create WhatsApp and Telegram chat links",
-  "@apiPermissionGenerateLinksDesc": {"description": "API permission description (api_key model)"},
+  "@apiPermissionGenerateLinksDesc": {
+    "description": "API permission description (api_key model)"
+  },
   "apiPermissionViewAnalytics": "View Analytics",
-  "@apiPermissionViewAnalytics": {"description": "API permission display name (api_key model)"},
+  "@apiPermissionViewAnalytics": {
+    "description": "API permission display name (api_key model)"
+  },
   "apiPermissionViewAnalyticsDesc": "Access analytics and statistics",
-  "@apiPermissionViewAnalyticsDesc": {"description": "API permission description (api_key model)"},
+  "@apiPermissionViewAnalyticsDesc": {
+    "description": "API permission description (api_key model)"
+  },
   "apiPermissionViewHistoryDesc": "View link generation history",
-  "@apiPermissionViewHistoryDesc": {"description": "API permission description (api_key model)"},
+  "@apiPermissionViewHistoryDesc": {
+    "description": "API permission description (api_key model)"
+  },
   "apiPermissionExportData": "Export Data",
-  "@apiPermissionExportData": {"description": "API permission display name (api_key model)"},
+  "@apiPermissionExportData": {
+    "description": "API permission display name (api_key model)"
+  },
   "apiPermissionExportDataDesc": "Export data in various formats",
-  "@apiPermissionExportDataDesc": {"description": "API permission description (api_key model)"},
+  "@apiPermissionExportDataDesc": {
+    "description": "API permission description (api_key model)"
+  },
   "apiPermissionViewTeamData": "View Team Data",
-  "@apiPermissionViewTeamData": {"description": "API permission display name (api_key model)"},
+  "@apiPermissionViewTeamData": {
+    "description": "API permission display name (api_key model)"
+  },
   "apiPermissionViewTeamDataDesc": "View team information and members",
-  "@apiPermissionViewTeamDataDesc": {"description": "API permission description (api_key model)"},
+  "@apiPermissionViewTeamDataDesc": {
+    "description": "API permission description (api_key model)"
+  },
   "apiPermissionManageTeam": "Manage Team",
-  "@apiPermissionManageTeam": {"description": "API permission display name (api_key model)"},
+  "@apiPermissionManageTeam": {
+    "description": "API permission display name (api_key model)"
+  },
   "apiPermissionManageTeamDesc": "Manage team settings and members",
-  "@apiPermissionManageTeamDesc": {"description": "API permission description (api_key model)"},
-
+  "@apiPermissionManageTeamDesc": {
+    "description": "API permission description (api_key model)"
+  },
   "authTagline": "Convert phone numbers to chat links",
-  "@authTagline": {"description": "login_screen: subtitle under app name"},
+  "@authTagline": {
+    "description": "login_screen: subtitle under app name"
+  },
   "authLoggingIn": "Logging in...",
-  "@authLoggingIn": {"description": "login_screen: loading overlay message"},
+  "@authLoggingIn": {
+    "description": "login_screen: loading overlay message"
+  },
   "authEmailLabel": "Email",
-  "@authEmailLabel": {"description": "Field label: login, register, edit profile dialog"},
+  "@authEmailLabel": {
+    "description": "Field label: login, register, edit profile dialog"
+  },
   "authEmailRequired": "Please enter your email",
-  "@authEmailRequired": {"description": "Email validator: login, register, edit profile dialog"},
+  "@authEmailRequired": {
+    "description": "Email validator: login, register, edit profile dialog"
+  },
   "authEmailInvalid": "Please enter a valid email",
-  "@authEmailInvalid": {"description": "Email validator: login, register, edit profile dialog"},
+  "@authEmailInvalid": {
+    "description": "Email validator: login, register, edit profile dialog"
+  },
   "authPasswordLabel": "Password",
-  "@authPasswordLabel": {"description": "Field label: login, register, settings password dialog, delete account dialog"},
+  "@authPasswordLabel": {
+    "description": "Field label: login, register, settings password dialog, delete account dialog"
+  },
   "authPasswordRequired": "Please enter your password",
-  "@authPasswordRequired": {"description": "Password validator: login and settings delete account dialog"},
+  "@authPasswordRequired": {
+    "description": "Password validator: login and settings delete account dialog"
+  },
   "authPasswordTooShort": "Password must be at least 6 characters",
-  "@authPasswordTooShort": {"description": "Password validator: login, register, edit profile dialog"},
+  "@authPasswordTooShort": {
+    "description": "Password validator: login, register, edit profile dialog"
+  },
   "authLogin": "Login",
-  "@authLogin": {"description": "login_screen: submit button"},
+  "@authLogin": {
+    "description": "login_screen: submit button"
+  },
   "authNoAccount": "Don't have an account? Register",
-  "@authNoAccount": {"description": "login_screen: link to register screen"},
+  "@authNoAccount": {
+    "description": "login_screen: link to register screen"
+  },
   "authContinueAsGuest": "Continue as Guest",
-  "@authContinueAsGuest": {"description": "login_screen: guest mode button"},
+  "@authContinueAsGuest": {
+    "description": "login_screen: guest mode button"
+  },
   "authInvalidCredentials": "Invalid email or password",
-  "@authInvalidCredentials": {"description": "login_screen: login failure error message"},
+  "@authInvalidCredentials": {
+    "description": "login_screen: login failure error message"
+  },
   "authRegisterTitle": "Create Account",
-  "@authRegisterTitle": {"description": "register_screen: app bar title and submit button"},
+  "@authRegisterTitle": {
+    "description": "register_screen: app bar title and submit button"
+  },
   "authCreatingAccount": "Creating account...",
-  "@authCreatingAccount": {"description": "register_screen: loading overlay message"},
+  "@authCreatingAccount": {
+    "description": "register_screen: loading overlay message"
+  },
   "authFullNameLabel": "Full Name",
-  "@authFullNameLabel": {"description": "register_screen: name field label"},
+  "@authFullNameLabel": {
+    "description": "register_screen: name field label"
+  },
   "authNameRequired": "Please enter your name",
-  "@authNameRequired": {"description": "Name validator: register screen and edit profile dialog"},
+  "@authNameRequired": {
+    "description": "Name validator: register screen and edit profile dialog"
+  },
   "authRegisterPasswordRequired": "Please enter a password",
-  "@authRegisterPasswordRequired": {"description": "register_screen: password field validator"},
+  "@authRegisterPasswordRequired": {
+    "description": "register_screen: password field validator"
+  },
   "authConfirmPasswordLabel": "Confirm Password",
-  "@authConfirmPasswordLabel": {"description": "register_screen: confirm password field label"},
+  "@authConfirmPasswordLabel": {
+    "description": "register_screen: confirm password field label"
+  },
   "authConfirmPasswordRequired": "Please confirm your password",
-  "@authConfirmPasswordRequired": {"description": "register_screen: confirm password validator"},
+  "@authConfirmPasswordRequired": {
+    "description": "register_screen: confirm password validator"
+  },
   "authPasswordsMismatch": "Passwords do not match",
-  "@authPasswordsMismatch": {"description": "register_screen: confirm password mismatch validator"},
+  "@authPasswordsMismatch": {
+    "description": "register_screen: confirm password mismatch validator"
+  },
   "authRegisterError": "This email is already registered or another error occurred",
-  "@authRegisterError": {"description": "register_screen: registration failure error message"},
-
+  "@authRegisterError": {
+    "description": "register_screen: registration failure error message"
+  },
   "settingsLoading": "Loading settings...",
-  "@settingsLoading": {"description": "settings_screen: loading message"},
+  "@settingsLoading": {
+    "description": "settings_screen: loading message"
+  },
   "settingsSectionAppearance": "Appearance",
-  "@settingsSectionAppearance": {"description": "settings_screen: section header"},
+  "@settingsSectionAppearance": {
+    "description": "settings_screen: section header"
+  },
   "settingsSectionBehavior": "Behavior",
-  "@settingsSectionBehavior": {"description": "settings_screen: section header"},
+  "@settingsSectionBehavior": {
+    "description": "settings_screen: section header"
+  },
   "settingsSaveHistoryTitle": "Save links history",
-  "@settingsSaveHistoryTitle": {"description": "settings_screen: switch tile title"},
+  "@settingsSaveHistoryTitle": {
+    "description": "settings_screen: switch tile title"
+  },
   "settingsSaveHistorySubtitle": "Keep a record of all generated links",
-  "@settingsSaveHistorySubtitle": {"description": "settings_screen: switch tile subtitle"},
+  "@settingsSaveHistorySubtitle": {
+    "description": "settings_screen: switch tile subtitle"
+  },
   "settingsShowQrTitle": "Show QR code by default",
-  "@settingsShowQrTitle": {"description": "settings_screen: switch tile title"},
+  "@settingsShowQrTitle": {
+    "description": "settings_screen: switch tile title"
+  },
   "settingsShowQrSubtitle": "Display QR code when link is generated",
-  "@settingsShowQrSubtitle": {"description": "settings_screen: switch tile subtitle"},
+  "@settingsShowQrSubtitle": {
+    "description": "settings_screen: switch tile subtitle"
+  },
   "settingsSectionAbout": "About",
-  "@settingsSectionAbout": {"description": "settings_screen: section header"},
+  "@settingsSectionAbout": {
+    "description": "settings_screen: section header"
+  },
   "settingsSectionSubscription": "Subscription",
-  "@settingsSectionSubscription": {"description": "settings_screen: section header"},
+  "@settingsSectionSubscription": {
+    "description": "settings_screen: section header"
+  },
   "settingsApiKeysSubtitle": "Manage API keys for integration",
-  "@settingsApiKeysSubtitle": {"description": "settings_screen: API keys action card subtitle"},
-  "settingsSyncUsersTitle": "Sync Local Users",
-  "@settingsSyncUsersTitle": {"description": "settings_screen: action card title (admin only)"},
-  "settingsSyncUsersSubtitle": "Sync local users with Supabase",
-  "@settingsSyncUsersSubtitle": {"description": "settings_screen: action card subtitle (admin only)"},
-  "settingsSyncAccountTitle": "Sync Account Data",
-  "@settingsSyncAccountTitle": {"description": "settings_screen: action card title"},
-  "settingsSyncAccountSubtitle": "Refresh subscription and teams data",
-  "@settingsSyncAccountSubtitle": {"description": "settings_screen: action card subtitle"},
-  "settingsForceUpdateTitle": "Force Update All Data",
-  "@settingsForceUpdateTitle": {"description": "settings_screen: action card title"},
-  "settingsForceUpdateSubtitle": "Re-login and update all local data",
-  "@settingsForceUpdateSubtitle": {"description": "settings_screen: action card subtitle"},
+  "@settingsApiKeysSubtitle": {
+    "description": "settings_screen: API keys action card subtitle"
+  },
   "settingsSignOut": "Sign Out",
-  "@settingsSignOut": {"description": "settings_screen: sign out button, logout dialog title and confirm button"},
+  "@settingsSignOut": {
+    "description": "settings_screen: sign out button, logout dialog title and confirm button"
+  },
   "settingsSignOutConfirm": "Are you sure you want to sign out?",
-  "@settingsSignOutConfirm": {"description": "settings_screen: sign out dialog message"},
+  "@settingsSignOutConfirm": {
+    "description": "settings_screen: sign out dialog message"
+  },
   "settingsSigningOut": "Signing out...",
-  "@settingsSigningOut": {"description": "settings_screen: snackbar while signing out"},
+  "@settingsSigningOut": {
+    "description": "settings_screen: snackbar while signing out"
+  },
   "settingsEnterPasswordTitle": "Enter Password",
-  "@settingsEnterPasswordTitle": {"description": "settings_screen: password dialog title"},
+  "@settingsEnterPasswordTitle": {
+    "description": "settings_screen: password dialog title"
+  },
   "settingsEnterPasswordMessage": "Please enter your password to continue",
-  "@settingsEnterPasswordMessage": {"description": "settings_screen: password dialog message"},
+  "@settingsEnterPasswordMessage": {
+    "description": "settings_screen: password dialog message"
+  },
   "settingsContinue": "Continue",
-  "@settingsContinue": {"description": "settings_screen: password dialog confirm button"},
-  "settingsSyncingData": "Syncing user data...",
-  "@settingsSyncingData": {"description": "settings_screen: snackbar while syncing"},
-  "settingsSyncNotLoggedIn": "Failed to sync: Not logged in to Supabase",
-  "@settingsSyncNotLoggedIn": {"description": "settings_screen: sync error snackbar"},
-  "settingsSyncNoLocalUser": "Failed to sync: No local user found",
-  "@settingsSyncNoLocalUser": {"description": "settings_screen: sync error snackbar"},
-  "settingsSyncSuccess": "User data synced successfully",
-  "@settingsSyncSuccess": {"description": "settings_screen: sync success snackbar"},
-  "settingsSyncError": "Error syncing data: {error}",
-  "@settingsSyncError": {"description": "settings_screen: sync exception snackbar", "placeholders": {"error": {"type": "String"}}},
+  "@settingsContinue": {
+    "description": "settings_screen: password dialog confirm button"
+  },
   "settingsUpdatingAllData": "Updating all local data...",
-  "@settingsUpdatingAllData": {"description": "settings_screen: snackbar while force updating"},
-  "settingsForceNoLocalUser": "Failed: No local user found",
-  "@settingsForceNoLocalUser": {"description": "settings_screen: force update error snackbar"},
+  "@settingsUpdatingAllData": {
+    "description": "settings_screen: snackbar while force updating"
+  },
   "settingsCancelled": "Cancelled by user",
-  "@settingsCancelled": {"description": "settings_screen: snackbar when password dialog cancelled"},
-  "settingsForceLoginFailed": "Failed to login with Supabase",
-  "@settingsForceLoginFailed": {"description": "settings_screen: force update error snackbar"},
-  "settingsForceSuccess": "All data updated successfully",
-  "@settingsForceSuccess": {"description": "settings_screen: force update success snackbar"},
+  "@settingsCancelled": {
+    "description": "settings_screen: snackbar when password dialog cancelled"
+  },
   "settingsLastLogin": "Last login: {date}",
-  "@settingsLastLogin": {"description": "settings_screen: profile last login line", "placeholders": {"date": {"type": "String"}}},
+  "@settingsLastLogin": {
+    "description": "settings_screen: profile last login line",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
   "settingsRoleMember": "Member",
-  "@settingsRoleMember": {"description": "settings_screen: fallback role display name when role is empty"},
+  "@settingsRoleMember": {
+    "description": "settings_screen: fallback role display name when role is empty"
+  },
   "settingsPermissionCreateLinks": "Create Links",
-  "@settingsPermissionCreateLinks": {"description": "settings_screen: profile permissions list item"},
+  "@settingsPermissionCreateLinks": {
+    "description": "settings_screen: profile permissions list item"
+  },
   "settingsPermissionCreateTeams": "Create Teams",
-  "@settingsPermissionCreateTeams": {"description": "settings_screen: profile permissions list item"},
+  "@settingsPermissionCreateTeams": {
+    "description": "settings_screen: profile permissions list item"
+  },
   "settingsPermissionApiAccess": "API Access",
-  "@settingsPermissionApiAccess": {"description": "settings_screen: profile permissions list item"},
+  "@settingsPermissionApiAccess": {
+    "description": "settings_screen: profile permissions list item"
+  },
   "settingsPermissionAdvancedAnalytics": "Advanced Analytics",
-  "@settingsPermissionAdvancedAnalytics": {"description": "settings_screen: profile permissions list item"},
+  "@settingsPermissionAdvancedAnalytics": {
+    "description": "settings_screen: profile permissions list item"
+  },
   "settingsPermissionAdminPanel": "Admin Panel",
-  "@settingsPermissionAdminPanel": {"description": "settings_screen: profile permissions list item (admin only)"},
+  "@settingsPermissionAdminPanel": {
+    "description": "settings_screen: profile permissions list item (admin only)"
+  },
   "settingsThemeTitle": "Theme Mode",
-  "@settingsThemeTitle": {"description": "settings_screen: theme selector title"},
+  "@settingsThemeTitle": {
+    "description": "settings_screen: theme selector title"
+  },
   "settingsThemeSystem": "System",
-  "@settingsThemeSystem": {"description": "settings_screen: system theme option title"},
+  "@settingsThemeSystem": {
+    "description": "settings_screen: system theme option title"
+  },
   "settingsThemeSystemSubtitle": "Follow system settings",
-  "@settingsThemeSystemSubtitle": {"description": "settings_screen: system theme option subtitle"},
+  "@settingsThemeSystemSubtitle": {
+    "description": "settings_screen: system theme option subtitle"
+  },
   "settingsThemeLight": "Light",
-  "@settingsThemeLight": {"description": "settings_screen: light theme option title"},
+  "@settingsThemeLight": {
+    "description": "settings_screen: light theme option title"
+  },
   "settingsThemeLightSubtitle": "Light theme for day use",
-  "@settingsThemeLightSubtitle": {"description": "settings_screen: light theme option subtitle"},
+  "@settingsThemeLightSubtitle": {
+    "description": "settings_screen: light theme option subtitle"
+  },
   "settingsThemeDark": "Dark",
-  "@settingsThemeDark": {"description": "settings_screen: dark theme option title"},
+  "@settingsThemeDark": {
+    "description": "settings_screen: dark theme option title"
+  },
   "settingsThemeDarkSubtitle": "Dark theme for night use",
-  "@settingsThemeDarkSubtitle": {"description": "settings_screen: dark theme option subtitle"},
+  "@settingsThemeDarkSubtitle": {
+    "description": "settings_screen: dark theme option subtitle"
+  },
   "settingsDefaultPlatform": "Default Platform",
-  "@settingsDefaultPlatform": {"description": "settings_screen: platform selector title"},
+  "@settingsDefaultPlatform": {
+    "description": "settings_screen: platform selector title"
+  },
   "settingsDefaultBadge": "Default",
-  "@settingsDefaultBadge": {"description": "settings_screen: badge on selected default platform"},
+  "@settingsDefaultBadge": {
+    "description": "settings_screen: badge on selected default platform"
+  },
   "settingsComingSoon": "This feature is coming soon!",
-  "@settingsComingSoon": {"description": "settings_screen: snackbar for unimplemented features"},
+  "@settingsComingSoon": {
+    "description": "settings_screen: snackbar for unimplemented features"
+  },
   "settingsEditProfile": "Edit Profile",
-  "@settingsEditProfile": {"description": "settings_screen: edit profile button and dialog title"},
+  "@settingsEditProfile": {
+    "description": "settings_screen: edit profile button and dialog title"
+  },
   "settingsNameLabel": "Name",
-  "@settingsNameLabel": {"description": "settings_screen: edit profile dialog name field label"},
+  "@settingsNameLabel": {
+    "description": "settings_screen: edit profile dialog name field label"
+  },
   "settingsNewPasswordLabel": "New Password (leave blank to keep current)",
-  "@settingsNewPasswordLabel": {"description": "settings_screen: edit profile dialog password field label"},
+  "@settingsNewPasswordLabel": {
+    "description": "settings_screen: edit profile dialog password field label"
+  },
   "settingsUpdateFailed": "Update failed. Email may already be in use.",
-  "@settingsUpdateFailed": {"description": "settings_screen: edit profile error message"},
+  "@settingsUpdateFailed": {
+    "description": "settings_screen: edit profile error message"
+  },
   "settingsSave": "Save",
-  "@settingsSave": {"description": "settings_screen: edit profile dialog save button"},
+  "@settingsSave": {
+    "description": "settings_screen: edit profile dialog save button"
+  },
   "settingsProfileUpdated": "Profile updated successfully",
-  "@settingsProfileUpdated": {"description": "settings_screen: snackbar after profile update"},
+  "@settingsProfileUpdated": {
+    "description": "settings_screen: snackbar after profile update"
+  },
   "settingsPlanTitle": "Subscription Plan",
-  "@settingsPlanTitle": {"description": "settings_screen: subscription tile title"},
+  "@settingsPlanTitle": {
+    "description": "settings_screen: subscription tile title"
+  },
   "settingsPremiumNoTeams": "You have a premium subscription but haven't created any teams yet",
-  "@settingsPremiumNoTeams": {"description": "settings_screen: premium without teams banner"},
+  "@settingsPremiumNoTeams": {
+    "description": "settings_screen: premium without teams banner"
+  },
   "settingsTeamsBenefit": "Teams allow you to collaborate with others and share links",
-  "@settingsTeamsBenefit": {"description": "settings_screen: premium without teams banner description"},
+  "@settingsTeamsBenefit": {
+    "description": "settings_screen: premium without teams banner description"
+  },
   "settingsCreateFirstTeam": "Create Your First Team",
-  "@settingsCreateFirstTeam": {"description": "settings_screen: premium without teams banner button"},
+  "@settingsCreateFirstTeam": {
+    "description": "settings_screen: premium without teams banner button"
+  },
   "settingsSectionAccount": "Account",
-  "@settingsSectionAccount": {"description": "settings_screen: guest section header"},
+  "@settingsSectionAccount": {
+    "description": "settings_screen: guest section header"
+  },
   "settingsGuestUser": "Guest User",
-  "@settingsGuestUser": {"description": "settings_screen: guest section title"},
+  "@settingsGuestUser": {
+    "description": "settings_screen: guest section title"
+  },
   "settingsGuestUsingApp": "You are currently using the app as a guest",
-  "@settingsGuestUsingApp": {"description": "settings_screen: guest section subtitle"},
+  "@settingsGuestUsingApp": {
+    "description": "settings_screen: guest section subtitle"
+  },
   "settingsLimitedFeatures": "Limited Features",
-  "@settingsLimitedFeatures": {"description": "settings_screen: guest mode badge"},
+  "@settingsLimitedFeatures": {
+    "description": "settings_screen: guest mode badge"
+  },
   "settingsGuestSignInPrompt": "Sign in or create an account to access all features:",
-  "@settingsGuestSignInPrompt": {"description": "settings_screen: guest section prompt"},
+  "@settingsGuestSignInPrompt": {
+    "description": "settings_screen: guest section prompt"
+  },
   "settingsSignIn": "Sign In",
-  "@settingsSignIn": {"description": "settings_screen: guest section sign in button"},
+  "@settingsSignIn": {
+    "description": "settings_screen: guest section sign in button"
+  },
   "settingsSignUp": "Sign Up",
-  "@settingsSignUp": {"description": "settings_screen: guest section sign up button"},
+  "@settingsSignUp": {
+    "description": "settings_screen: guest section sign up button"
+  },
   "settingsFeatureSaveHistory": "Save your link history",
-  "@settingsFeatureSaveHistory": {"description": "settings_screen: guest feature list item"},
+  "@settingsFeatureSaveHistory": {
+    "description": "settings_screen: guest feature list item"
+  },
   "settingsFeatureSyncDevices": "Sync across devices",
-  "@settingsFeatureSyncDevices": {"description": "settings_screen: guest feature list item"},
+  "@settingsFeatureSyncDevices": {
+    "description": "settings_screen: guest feature list item"
+  },
   "settingsFeatureTeams": "Create teams and share links",
-  "@settingsFeatureTeams": {"description": "settings_screen: guest feature list item"},
+  "@settingsFeatureTeams": {
+    "description": "settings_screen: guest feature list item"
+  },
   "settingsFeatureAnalytics": "Access advanced analytics",
-  "@settingsFeatureAnalytics": {"description": "settings_screen: guest feature list item"},
+  "@settingsFeatureAnalytics": {
+    "description": "settings_screen: guest feature list item"
+  },
   "settingsFeatureApi": "Use API for integrations",
-  "@settingsFeatureApi": {"description": "settings_screen: guest feature list item"},
+  "@settingsFeatureApi": {
+    "description": "settings_screen: guest feature list item"
+  },
   "settingsDeleteAccount": "Delete Account",
-  "@settingsDeleteAccount": {"description": "settings_screen: delete account button and dialog title"},
+  "@settingsDeleteAccount": {
+    "description": "settings_screen: delete account button and dialog title"
+  },
   "settingsDeleteAccountWarning": "Warning: This action cannot be undone. All your data will be permanently deleted.",
-  "@settingsDeleteAccountWarning": {"description": "settings_screen: delete account dialog warning"},
+  "@settingsDeleteAccountWarning": {
+    "description": "settings_screen: delete account dialog warning"
+  },
   "settingsDeleteAccountPrompt": "Please enter your password to confirm deletion:",
-  "@settingsDeleteAccountPrompt": {"description": "settings_screen: delete account dialog prompt"},
+  "@settingsDeleteAccountPrompt": {
+    "description": "settings_screen: delete account dialog prompt"
+  },
   "settingsAccountDeleted": "Account deleted successfully",
-  "@settingsAccountDeleted": {"description": "settings_screen: snackbar after account deletion"},
+  "@settingsAccountDeleted": {
+    "description": "settings_screen: snackbar after account deletion"
+  },
   "settingsIncorrectPassword": "Incorrect password",
-  "@settingsIncorrectPassword": {"description": "settings_screen: snackbar when delete account password wrong"},
-  "settingsSyncUsersDialogTitle": "Sync Users with Supabase",
-  "@settingsSyncUsersDialogTitle": {"description": "settings_screen: sync users dialog title"},
-  "settingsSyncUsersDialogMessage": "Enter admin credentials to sync local users with Supabase. This will create accounts for all local users.",
-  "@settingsSyncUsersDialogMessage": {"description": "settings_screen: sync users dialog message"},
+  "@settingsIncorrectPassword": {
+    "description": "settings_screen: snackbar when delete account password wrong"
+  },
   "settingsAdminEmailLabel": "Admin Email",
-  "@settingsAdminEmailLabel": {"description": "settings_screen: sync users dialog email field label"},
+  "@settingsAdminEmailLabel": {
+    "description": "settings_screen: sync users dialog email field label"
+  },
   "settingsAdminEmailRequired": "Please enter admin email",
-  "@settingsAdminEmailRequired": {"description": "settings_screen: sync users dialog email validator"},
+  "@settingsAdminEmailRequired": {
+    "description": "settings_screen: sync users dialog email validator"
+  },
   "settingsAdminPasswordLabel": "Admin Password",
-  "@settingsAdminPasswordLabel": {"description": "settings_screen: sync users dialog password field label"},
+  "@settingsAdminPasswordLabel": {
+    "description": "settings_screen: sync users dialog password field label"
+  },
   "settingsAdminPasswordRequired": "Please enter admin password",
-  "@settingsAdminPasswordRequired": {"description": "settings_screen: sync users dialog password validator"},
-  "settingsSyncUsersButton": "Sync Users",
-  "@settingsSyncUsersButton": {"description": "settings_screen: sync users dialog confirm button"},
-  "settingsSyncResultsTitle": "Sync Results",
-  "@settingsSyncResultsTitle": {"description": "settings_screen: sync results dialog title"},
-  "settingsSyncTotalUsers": "Total users: {count}",
-  "@settingsSyncTotalUsers": {"description": "settings_screen: sync results line", "placeholders": {"count": {"type": "num"}}},
-  "settingsSyncSuccessCount": "Successfully synced: {count}",
-  "@settingsSyncSuccessCount": {"description": "settings_screen: sync results line", "placeholders": {"count": {"type": "num"}}},
-  "settingsSyncFailedCount": "Failed: {count}",
-  "@settingsSyncFailedCount": {"description": "settings_screen: sync results line", "placeholders": {"count": {"type": "num"}}},
-  "settingsSyncSkippedCount": "Skipped: {count}",
-  "@settingsSyncSkippedCount": {"description": "settings_screen: sync results line", "placeholders": {"count": {"type": "num"}}},
-  "settingsSyncDetails": "Details:",
-  "@settingsSyncDetails": {"description": "settings_screen: sync results details header"},
-  "settingsSyncEmail": "Email: {email}",
-  "@settingsSyncEmail": {"description": "settings_screen: sync result detail line", "placeholders": {"email": {"type": "String"}}},
-  "settingsSyncStatus": "Status: {status}",
-  "@settingsSyncStatus": {"description": "settings_screen: sync result detail line", "placeholders": {"status": {"type": "String"}}},
-  "settingsSyncReason": "Reason: {reason}",
-  "@settingsSyncReason": {"description": "settings_screen: sync result detail line", "placeholders": {"reason": {"type": "String"}}},
-  "settingsSyncNewId": "New ID: {id}",
-  "@settingsSyncNewId": {"description": "settings_screen: sync result detail line", "placeholders": {"id": {"type": "String"}}},
+  "@settingsAdminPasswordRequired": {
+    "description": "settings_screen: sync users dialog password validator"
+  },
   "settingsVersion": "Version",
-  "@settingsVersion": {"description": "settings_screen: about card item title"},
+  "@settingsVersion": {
+    "description": "settings_screen: about card item title"
+  },
   "settingsPrivacyPolicy": "Privacy Policy",
-  "@settingsPrivacyPolicy": {"description": "settings_screen: about card item title"},
+  "@settingsPrivacyPolicy": {
+    "description": "settings_screen: about card item title"
+  },
   "settingsPrivacyPolicySubtitle": "Read our privacy policy",
-  "@settingsPrivacyPolicySubtitle": {"description": "settings_screen: about card item subtitle"},
+  "@settingsPrivacyPolicySubtitle": {
+    "description": "settings_screen: about card item subtitle"
+  },
   "settingsTermsOfService": "Terms of Service",
-  "@settingsTermsOfService": {"description": "settings_screen: about card item title"},
+  "@settingsTermsOfService": {
+    "description": "settings_screen: about card item title"
+  },
   "settingsTermsSubtitle": "Read our terms of service",
-  "@settingsTermsSubtitle": {"description": "settings_screen: about card item subtitle"},
-
+  "@settingsTermsSubtitle": {
+    "description": "settings_screen: about card item subtitle"
+  },
   "subscriptionTitle": "Subscription Plans",
-  "@subscriptionTitle": {"description": "subscription_screen: app bar title"},
+  "@subscriptionTitle": {
+    "description": "subscription_screen: app bar title"
+  },
   "subscriptionChoosePlan": "Choose a Plan",
-  "@subscriptionChoosePlan": {"description": "subscription_screen: plans section heading"},
+  "@subscriptionChoosePlan": {
+    "description": "subscription_screen: plans section heading"
+  },
   "subscriptionTierFree": "Free",
-  "@subscriptionTierFree": {"description": "Plan name: subscription cards, settings tier badge, plan change dialogs"},
+  "@subscriptionTierFree": {
+    "description": "Plan name: subscription cards, settings tier badge, plan change dialogs"
+  },
   "subscriptionTierBasic": "Basic",
-  "@subscriptionTierBasic": {"description": "Plan name: subscription cards, settings tier badge, plan change dialogs"},
+  "@subscriptionTierBasic": {
+    "description": "Plan name: subscription cards, settings tier badge, plan change dialogs"
+  },
   "subscriptionTierProfessional": "Professional",
-  "@subscriptionTierProfessional": {"description": "Plan name: subscription cards, settings tier badge, plan change dialogs"},
+  "@subscriptionTierProfessional": {
+    "description": "Plan name: subscription cards, settings tier badge, plan change dialogs"
+  },
   "subscriptionTierEnterprise": "Enterprise",
-  "@subscriptionTierEnterprise": {"description": "Plan name: subscription cards, settings tier badge, plan change dialogs"},
+  "@subscriptionTierEnterprise": {
+    "description": "Plan name: subscription cards, settings tier badge, plan change dialogs"
+  },
   "subscriptionPriceFree": "$0",
-  "@subscriptionPriceFree": {"description": "subscription_card: free plan price"},
+  "@subscriptionPriceFree": {
+    "description": "subscription_card: free plan price"
+  },
   "subscriptionPriceBasic": "$4.99",
-  "@subscriptionPriceBasic": {"description": "subscription_card: basic plan price"},
+  "@subscriptionPriceBasic": {
+    "description": "subscription_card: basic plan price"
+  },
   "subscriptionPriceProfessional": "$9.99",
-  "@subscriptionPriceProfessional": {"description": "subscription_card: professional plan price"},
+  "@subscriptionPriceProfessional": {
+    "description": "subscription_card: professional plan price"
+  },
   "subscriptionPriceEnterprise": "$29.99",
-  "@subscriptionPriceEnterprise": {"description": "subscription_card: enterprise plan price"},
+  "@subscriptionPriceEnterprise": {
+    "description": "subscription_card: enterprise plan price"
+  },
   "subscriptionForever": "forever",
-  "@subscriptionForever": {"description": "subscription_card: free plan billing period"},
+  "@subscriptionForever": {
+    "description": "subscription_card: free plan billing period"
+  },
   "subscriptionPerMonth": "per month",
-  "@subscriptionPerMonth": {"description": "subscription_card: paid plans billing period"},
+  "@subscriptionPerMonth": {
+    "description": "subscription_card: paid plans billing period"
+  },
   "subscriptionFreeFeature1": "Basic link generation",
-  "@subscriptionFreeFeature1": {"description": "subscription_screen: free plan feature"},
+  "@subscriptionFreeFeature1": {
+    "description": "subscription_screen: free plan feature"
+  },
   "subscriptionFreeFeatureHistory": "Limited history ({count} items)",
-  "@subscriptionFreeFeatureHistory": {"description": "subscription_screen: free plan feature", "placeholders": {"count": {"type": "num"}}},
+  "@subscriptionFreeFeatureHistory": {
+    "description": "subscription_screen: free plan feature",
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
   "subscriptionFreeFeatureAnalytics": "Basic analytics",
-  "@subscriptionFreeFeatureAnalytics": {"description": "subscription_screen: free plan feature"},
+  "@subscriptionFreeFeatureAnalytics": {
+    "description": "subscription_screen: free plan feature"
+  },
   "subscriptionFreeNoTeams": "No team features",
-  "@subscriptionFreeNoTeams": {"description": "subscription_screen: free plan limitation"},
+  "@subscriptionFreeNoTeams": {
+    "description": "subscription_screen: free plan limitation"
+  },
   "subscriptionFreeNoAnalytics": "No advanced analytics",
-  "@subscriptionFreeNoAnalytics": {"description": "subscription_screen: free plan limitation"},
+  "@subscriptionFreeNoAnalytics": {
+    "description": "subscription_screen: free plan limitation"
+  },
   "subscriptionFreeNoApi": "No API access",
-  "@subscriptionFreeNoApi": {"description": "subscription_screen: free plan limitation"},
+  "@subscriptionFreeNoApi": {
+    "description": "subscription_screen: free plan limitation"
+  },
   "subscriptionEverythingInFree": "Everything in Free",
-  "@subscriptionEverythingInFree": {"description": "subscription_screen: basic plan feature"},
+  "@subscriptionEverythingInFree": {
+    "description": "subscription_screen: basic plan feature"
+  },
   "subscriptionTeamLimit": "Create up to {count} member teams",
-  "@subscriptionTeamLimit": {"description": "subscription_screen: basic and professional plan feature", "placeholders": {"count": {"type": "num"}}},
+  "@subscriptionTeamLimit": {
+    "description": "subscription_screen: basic and professional plan feature",
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
   "subscriptionHistoryLimit": "Extended history ({count} items)",
-  "@subscriptionHistoryLimit": {"description": "subscription_screen: basic, professional and enterprise plan feature", "placeholders": {"count": {"type": "num"}}},
+  "@subscriptionHistoryLimit": {
+    "description": "subscription_screen: basic, professional and enterprise plan feature",
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
   "subscriptionPrioritySupport": "Priority support",
-  "@subscriptionPrioritySupport": {"description": "subscription_screen: basic plan feature"},
+  "@subscriptionPrioritySupport": {
+    "description": "subscription_screen: basic plan feature"
+  },
   "subscriptionEverythingInBasic": "Everything in Basic",
-  "@subscriptionEverythingInBasic": {"description": "subscription_screen: professional plan feature"},
+  "@subscriptionEverythingInBasic": {
+    "description": "subscription_screen: professional plan feature"
+  },
   "subscriptionAdvancedAnalytics": "Advanced analytics",
-  "@subscriptionAdvancedAnalytics": {"description": "subscription_screen: professional plan feature"},
+  "@subscriptionAdvancedAnalytics": {
+    "description": "subscription_screen: professional plan feature"
+  },
   "subscriptionApiAccess": "API access for integration",
-  "@subscriptionApiAccess": {"description": "subscription_screen: professional plan feature"},
+  "@subscriptionApiAccess": {
+    "description": "subscription_screen: professional plan feature"
+  },
   "subscriptionEverythingInProfessional": "Everything in Professional",
-  "@subscriptionEverythingInProfessional": {"description": "subscription_screen: enterprise plan feature"},
+  "@subscriptionEverythingInProfessional": {
+    "description": "subscription_screen: enterprise plan feature"
+  },
   "subscriptionUnlimitedMembers": "Unlimited team members (up to {count})",
-  "@subscriptionUnlimitedMembers": {"description": "subscription_screen: enterprise plan feature", "placeholders": {"count": {"type": "num"}}},
+  "@subscriptionUnlimitedMembers": {
+    "description": "subscription_screen: enterprise plan feature",
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
   "subscriptionCustomBranding": "Custom branding",
-  "@subscriptionCustomBranding": {"description": "subscription_screen: enterprise plan feature"},
+  "@subscriptionCustomBranding": {
+    "description": "subscription_screen: enterprise plan feature"
+  },
   "subscriptionPremiumSupport": "Premium support",
-  "@subscriptionPremiumSupport": {"description": "subscription_screen: enterprise plan feature"},
+  "@subscriptionPremiumSupport": {
+    "description": "subscription_screen: enterprise plan feature"
+  },
   "subscriptionExtendedApi": "Extended API features",
-  "@subscriptionExtendedApi": {"description": "subscription_screen: enterprise plan feature"},
+  "@subscriptionExtendedApi": {
+    "description": "subscription_screen: enterprise plan feature"
+  },
   "subscriptionContactUs": "Need more? Contact us for a custom plan.",
-  "@subscriptionContactUs": {"description": "subscription_screen: footer note"},
+  "@subscriptionContactUs": {
+    "description": "subscription_screen: footer note"
+  },
   "subscriptionFeaturesHeading": "Features",
-  "@subscriptionFeaturesHeading": {"description": "subscription_card: features list heading"},
+  "@subscriptionFeaturesHeading": {
+    "description": "subscription_card: features list heading"
+  },
   "subscriptionLimitationsHeading": "Limitations",
-  "@subscriptionLimitationsHeading": {"description": "subscription_card: limitations list heading"},
+  "@subscriptionLimitationsHeading": {
+    "description": "subscription_card: limitations list heading"
+  },
   "subscriptionPopularBadge": "POPULAR",
-  "@subscriptionPopularBadge": {"description": "subscription_card: badge on popular plan"},
+  "@subscriptionPopularBadge": {
+    "description": "subscription_card: badge on popular plan"
+  },
   "subscriptionCurrentPlan": "Current Plan",
-  "@subscriptionCurrentPlan": {"description": "subscription_screen: button text when plan is current"},
+  "@subscriptionCurrentPlan": {
+    "description": "subscription_screen: button text when plan is current"
+  },
   "subscriptionDowngrade": "Downgrade",
-  "@subscriptionDowngrade": {"description": "subscription_screen: downgrade button text and dialog confirm"},
+  "@subscriptionDowngrade": {
+    "description": "subscription_screen: downgrade button text and dialog confirm"
+  },
   "subscriptionUpgrade": "Upgrade",
-  "@subscriptionUpgrade": {"description": "subscription_screen: upgrade button text"},
+  "@subscriptionUpgrade": {
+    "description": "subscription_screen: upgrade button text"
+  },
   "subscriptionSubscribe": "Subscribe",
-  "@subscriptionSubscribe": {"description": "subscription_screen: subscribe button text when no current tier"},
+  "@subscriptionSubscribe": {
+    "description": "subscription_screen: subscribe button text when no current tier"
+  },
   "subscriptionCurrentPlanLabel": "Current Plan: {tierName}",
-  "@subscriptionCurrentPlanLabel": {"description": "subscription_screen: info card title", "placeholders": {"tierName": {"type": "String"}}},
+  "@subscriptionCurrentPlanLabel": {
+    "description": "subscription_screen: info card title",
+    "placeholders": {
+      "tierName": {
+        "type": "String"
+      }
+    }
+  },
   "subscriptionExpiryLabel": "Expiry: {date}",
-  "@subscriptionExpiryLabel": {"description": "subscription_screen: info card expiry line", "placeholders": {"date": {"type": "String"}}},
+  "@subscriptionExpiryLabel": {
+    "description": "subscription_screen: info card expiry line",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
   "subscriptionNoExpiry": "No expiration date",
-  "@subscriptionNoExpiry": {"description": "subscription_screen: expiry fallback text"},
+  "@subscriptionNoExpiry": {
+    "description": "subscription_screen: expiry fallback text"
+  },
   "subscriptionStatusLabel": "Status: {status}",
-  "@subscriptionStatusLabel": {"description": "subscription_screen: info card status line (status: Active/Expired)", "placeholders": {"status": {"type": "String"}}},
+  "@subscriptionStatusLabel": {
+    "description": "subscription_screen: info card status line (status: Active/Expired)",
+    "placeholders": {
+      "status": {
+        "type": "String"
+      }
+    }
+  },
   "subscriptionTeamsFeatureLabel": "Teams Feature: {availability}",
-  "@subscriptionTeamsFeatureLabel": {"description": "subscription_screen: info card teams feature line", "placeholders": {"availability": {"type": "String"}}},
+  "@subscriptionTeamsFeatureLabel": {
+    "description": "subscription_screen: info card teams feature line",
+    "placeholders": {
+      "availability": {
+        "type": "String"
+      }
+    }
+  },
   "subscriptionActive": "Active",
-  "@subscriptionActive": {"description": "Subscription status word: settings tier badge and subscription status line"},
+  "@subscriptionActive": {
+    "description": "Subscription status word: settings tier badge and subscription status line"
+  },
   "subscriptionExpired": "Expired",
-  "@subscriptionExpired": {"description": "Subscription status word: settings tier badge and subscription status line"},
+  "@subscriptionExpired": {
+    "description": "Subscription status word: settings tier badge and subscription status line"
+  },
   "subscriptionAvailable": "Available",
-  "@subscriptionAvailable": {"description": "subscription_screen: teams feature availability value"},
+  "@subscriptionAvailable": {
+    "description": "subscription_screen: teams feature availability value"
+  },
   "subscriptionNotAvailable": "Not Available",
-  "@subscriptionNotAvailable": {"description": "subscription_screen: teams feature availability value"},
+  "@subscriptionNotAvailable": {
+    "description": "subscription_screen: teams feature availability value"
+  },
   "subscriptionRefreshStatus": "Refresh Status",
-  "@subscriptionRefreshStatus": {"description": "subscription_screen: refresh status button"},
+  "@subscriptionRefreshStatus": {
+    "description": "subscription_screen: refresh status button"
+  },
   "subscriptionStatusUpdated": "Subscription status updated successfully",
-  "@subscriptionStatusUpdated": {"description": "subscription_screen: success snackbar"},
+  "@subscriptionStatusUpdated": {
+    "description": "subscription_screen: success snackbar"
+  },
   "subscriptionRefreshFailed": "Unable to refresh subscription status. Please log in again.",
-  "@subscriptionRefreshFailed": {"description": "subscription_screen: refresh failure snackbar"},
+  "@subscriptionRefreshFailed": {
+    "description": "subscription_screen: refresh failure snackbar"
+  },
   "subscriptionUpdateError": "Error updating subscription: {error}",
-  "@subscriptionUpdateError": {"description": "subscription_screen: refresh exception snackbar", "placeholders": {"error": {"type": "String"}}},
+  "@subscriptionUpdateError": {
+    "description": "subscription_screen: refresh exception snackbar",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "subscriptionDowngradeTitle": "Downgrade Plan?",
-  "@subscriptionDowngradeTitle": {"description": "subscription_screen: downgrade dialog title"},
+  "@subscriptionDowngradeTitle": {
+    "description": "subscription_screen: downgrade dialog title"
+  },
   "subscriptionChangeTitle": "Change Plan?",
-  "@subscriptionChangeTitle": {"description": "subscription_screen: change plan dialog title"},
+  "@subscriptionChangeTitle": {
+    "description": "subscription_screen: change plan dialog title"
+  },
   "subscriptionDowngradeMessage": "Are you sure you want to downgrade to the {planName} plan? You may lose access to some features.",
-  "@subscriptionDowngradeMessage": {"description": "subscription_screen: downgrade dialog message", "placeholders": {"planName": {"type": "String"}}},
+  "@subscriptionDowngradeMessage": {
+    "description": "subscription_screen: downgrade dialog message",
+    "placeholders": {
+      "planName": {
+        "type": "String"
+      }
+    }
+  },
   "subscriptionChangeMessage": "Are you sure you want to change to the {planName} plan?",
-  "@subscriptionChangeMessage": {"description": "subscription_screen: change plan dialog message", "placeholders": {"planName": {"type": "String"}}},
+  "@subscriptionChangeMessage": {
+    "description": "subscription_screen: change plan dialog message",
+    "placeholders": {
+      "planName": {
+        "type": "String"
+      }
+    }
+  },
   "subscriptionChange": "Change",
-  "@subscriptionChange": {"description": "subscription_screen: change plan dialog confirm button"},
+  "@subscriptionChange": {
+    "description": "subscription_screen: change plan dialog confirm button"
+  },
   "subscriptionPaymentTitle": "Complete Your Subscription",
-  "@subscriptionPaymentTitle": {"description": "subscription_screen: payment dialog title"},
+  "@subscriptionPaymentTitle": {
+    "description": "subscription_screen: payment dialog title"
+  },
   "subscriptionPaymentMessage": "In a real application, this would show a payment form using Stripe or PayPal. For this demo, we'll simulate a successful payment.",
-  "@subscriptionPaymentMessage": {"description": "subscription_screen: payment dialog message"},
+  "@subscriptionPaymentMessage": {
+    "description": "subscription_screen: payment dialog message"
+  },
   "subscriptionSimulatePayment": "Simulate Payment",
-  "@subscriptionSimulatePayment": {"description": "subscription_screen: payment dialog confirm button"},
+  "@subscriptionSimulatePayment": {
+    "description": "subscription_screen: payment dialog confirm button"
+  },
   "subscriptionErrorLoad": "Failed to load subscription: {error}",
-  "@subscriptionErrorLoad": {"description": "subscription_viewmodel: load error", "placeholders": {"error": {"type": "String"}}},
+  "@subscriptionErrorLoad": {
+    "description": "subscription_viewmodel: load error",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "subscriptionErrorUpdate": "Failed to update subscription: {error}",
-  "@subscriptionErrorUpdate": {"description": "subscription_viewmodel: update exception error", "placeholders": {"error": {"type": "String"}}},
+  "@subscriptionErrorUpdate": {
+    "description": "subscription_viewmodel: update exception error",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
   "subscriptionErrorUpdateFailed": "Failed to update subscription",
-  "@subscriptionErrorUpdateFailed": {"description": "subscription_viewmodel: update failure"},
-
-  "syncDemoTitle": "Sync Status Demo",
-  "@syncDemoTitle": {"description": "sync_status_demo: app bar and body heading"},
-  "syncDemoDescription": "This demo shows how to integrate the sync status indicator into your UI.",
-  "@syncDemoDescription": {"description": "sync_status_demo: description text"},
-  "syncDemoManualSync": "Manual Sync",
-  "@syncDemoManualSync": {"description": "sync_status_demo: manual sync button"},
-  "syncDemoArabicNote": "بإمكانك استخدام مؤشر حالة المزامنة للتعرف على حالة المزامنة الحالية بين التطبيق وخادم Supabase.",
-  "@syncDemoArabicNote": {"description": "sync_status_demo: Arabic explanation note (already Arabic in source)"},
-  "syncDemoCurrentStatus": "Current Status: {status}",
-  "@syncDemoCurrentStatus": {"description": "sync_status_demo: current status line", "placeholders": {"status": {"type": "String"}}},
-  "syncDemoOnline": "Online: {value}",
-  "@syncDemoOnline": {"description": "sync_status_demo: online line (value: commonYes/commonNo)", "placeholders": {"value": {"type": "String"}}},
-  "syncDemoLastSync": "Last Sync: {time}",
-  "@syncDemoLastSync": {"description": "sync_status_demo: last sync line", "placeholders": {"time": {"type": "String"}}},
-  "syncDemoOptionsTitle": "Sync Options",
-  "@syncDemoOptionsTitle": {"description": "sync_status_demo: sync options dialog title"},
-  "syncDemoArabicOptionsHeading": "خيارات المزامنة:",
-  "@syncDemoArabicOptionsHeading": {"description": "sync_status_demo: Arabic options heading (already Arabic in source)"},
-  "syncDemoArabicOptionsBody": "يمكنك مزامنة البيانات يدويًا أو ضبط المزامنة التلقائية",
-  "@syncDemoArabicOptionsBody": {"description": "sync_status_demo: Arabic options body (already Arabic in source)"},
-  "syncDemoOptionsHeading": "Sync Options:",
-  "@syncDemoOptionsHeading": {"description": "sync_status_demo: English options heading"},
-  "syncDemoOptionsBody": "You can manually sync data or configure automatic sync",
-  "@syncDemoOptionsBody": {"description": "sync_status_demo: English options body"},
-  "syncDemoSyncNow": "Sync Now",
-  "@syncDemoSyncNow": {"description": "sync_status_demo: sync now dialog button"}
+  "@subscriptionErrorUpdateFailed": {
+    "description": "subscription_viewmodel: update failure"
+  }
 }
