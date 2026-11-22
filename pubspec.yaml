@@ -65,6 +65,7 @@ dependencies:
   
   # PWA Support
   pwa_install: ^0.0.6
+  material_ui: ^0.0.1
 
 dev_dependencies:
   flutter_test:
