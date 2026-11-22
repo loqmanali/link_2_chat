@@ -48,18 +48,19 @@ class SignInAction extends AsyncNotifier<void> {
   @override
   Future<void> build() async {}
 
-  Future<void> signIn({required String email, required String password}) =>
-      AsyncValue.guard(() async {
-        final store = ref.read(usersStoreProvider);
-        final user = await store.byEmail(email);
-        if (user == null || user.passwordHash != hashPassword(password)) {
-          throw const AuthFailure('Invalid email or password.');
-        }
-        await store.touchLogin(user.id);
-        await ref
-            .read(sessionControllerProvider.notifier)
-            .signedIn(AppSession(userId: user.id, isGuest: false));
-      });
+  Future<void> signIn({required String email, required String password}) async {
+    state = await AsyncValue.guard(() async {
+      final store = ref.read(usersStoreProvider);
+      final user = await store.byEmail(email);
+      if (user == null || user.passwordHash != hashPassword(password)) {
+        throw const AuthFailure('Invalid email or password.');
+      }
+      await store.touchLogin(user.id);
+      await ref
+          .read(sessionControllerProvider.notifier)
+          .signedIn(AppSession(userId: user.id, isGuest: false));
+    });
+  }
 }
 
 /// Creates a local account and signs it in.
@@ -76,17 +77,25 @@ class SignUpAction extends AsyncNotifier<void> {
     required String name,
     required String email,
     required String password,
-  }) => AsyncValue.guard(() async {
-    if (password.length < 6) {
-      throw const ValidationFailure('Password must be at least 6 characters.');
-    }
-    final user = await ref
-        .read(usersStoreProvider)
-        .create(name: name, email: email, passwordHash: hashPassword(password));
-    await ref
-        .read(sessionControllerProvider.notifier)
-        .signedIn(AppSession(userId: user.id, isGuest: false));
-  });
+  }) async {
+    state = await AsyncValue.guard(() async {
+      if (password.length < 6) {
+        throw const ValidationFailure(
+          'Password must be at least 6 characters.',
+        );
+      }
+      final user = await ref
+          .read(usersStoreProvider)
+          .create(
+            name: name,
+            email: email,
+            passwordHash: hashPassword(password),
+          );
+      await ref
+          .read(sessionControllerProvider.notifier)
+          .signedIn(AppSession(userId: user.id, isGuest: false));
+    });
+  }
 }
 
 /// Enters the app without an account: limited locally, marked in the session.
@@ -100,14 +109,16 @@ class GuestSignInAction extends AsyncNotifier<void> {
   @override
   Future<void> build() async {}
 
-  Future<void> enterAsGuest() => AsyncValue.guard(() async {
-    // Reset the guest link budget each time guest mode is entered, matching
-    // the pre-refactor login screen.
-    await ref.read(sharedPreferencesProvider).setInt('guest_link_count', 0);
-    await ref
-        .read(sessionControllerProvider.notifier)
-        .signedIn(const AppSession(userId: 'guest', isGuest: true));
-  });
+  Future<void> enterAsGuest() async {
+    state = await AsyncValue.guard(() async {
+      // Reset the guest link budget each time guest mode is entered, matching
+      // the pre-refactor login screen.
+      await ref.read(sharedPreferencesProvider).setInt('guest_link_count', 0);
+      await ref
+          .read(sessionControllerProvider.notifier)
+          .signedIn(const AppSession(userId: 'guest', isGuest: true));
+    });
+  }
 }
 
 /// Signs out to the public screens.
@@ -120,9 +131,11 @@ class SignOutAction extends AsyncNotifier<void> {
   @override
   Future<void> build() async {}
 
-  Future<void> signOut() => AsyncValue.guard(() async {
-    await ref.read(sessionControllerProvider.notifier).signedOut();
-  });
+  Future<void> signOut() async {
+    state = await AsyncValue.guard(() async {
+      await ref.read(sessionControllerProvider.notifier).signedOut();
+    });
+  }
 }
 
 /// Edits the signed-in account's profile (name and/or password).
@@ -136,23 +149,24 @@ class UpdateProfileAction extends AsyncNotifier<void> {
   @override
   Future<void> build() async {}
 
-  Future<void> updateProfile({String? name, String? newPassword}) =>
-      AsyncValue.guard(() async {
-        final session = ref.read(sessionControllerProvider);
-        if (session == null || session.isGuest) {
-          throw const AuthFailure('No signed-in account.');
-        }
-        await ref
-            .read(usersStoreProvider)
-            .updateProfile(
-              session.userId,
-              name: name,
-              passwordHash:
-                  newPassword == null || newPassword.isEmpty
-                      ? null
-                      : hashPassword(newPassword),
-            );
-      });
+  Future<void> updateProfile({String? name, String? newPassword}) async {
+    state = await AsyncValue.guard(() async {
+      final session = ref.read(sessionControllerProvider);
+      if (session == null || session.isGuest) {
+        throw const AuthFailure('No signed-in account.');
+      }
+      await ref
+          .read(usersStoreProvider)
+          .updateProfile(
+            session.userId,
+            name: name,
+            passwordHash:
+                newPassword == null || newPassword.isEmpty
+                    ? null
+                    : hashPassword(newPassword),
+          );
+    });
+  }
 }
 
 /// Deletes the signed-in account with everything it owns locally, then signs
@@ -167,17 +181,19 @@ class DeleteAccountAction extends AsyncNotifier<void> {
   @override
   Future<void> build() async {}
 
-  Future<void> delete({required String password}) => AsyncValue.guard(() async {
-    final session = ref.read(sessionControllerProvider);
-    if (session == null || session.isGuest) {
-      throw const AuthFailure('No signed-in account.');
-    }
-    final store = ref.read(usersStoreProvider);
-    final user = await store.byId(session.userId);
-    if (user == null || user.passwordHash != hashPassword(password)) {
-      throw const AuthFailure('Incorrect password.');
-    }
-    await store.delete(user.id);
-    await ref.read(sessionControllerProvider.notifier).signedOut();
-  });
+  Future<void> delete({required String password}) async {
+    state = await AsyncValue.guard(() async {
+      final session = ref.read(sessionControllerProvider);
+      if (session == null || session.isGuest) {
+        throw const AuthFailure('No signed-in account.');
+      }
+      final store = ref.read(usersStoreProvider);
+      final user = await store.byId(session.userId);
+      if (user == null || user.passwordHash != hashPassword(password)) {
+        throw const AuthFailure('Incorrect password.');
+      }
+      await store.delete(user.id);
+      await ref.read(sessionControllerProvider.notifier).signedOut();
+    });
+  }
 }

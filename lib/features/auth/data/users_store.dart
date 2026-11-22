@@ -149,7 +149,14 @@ class UsersStore {
 
   User _user(Map<Object?, Object?> row) {
     final r = JsonReader.of(row);
-    final prefsReader = r.objectOrNull('preferences');
+    // The column stores encoded json text; read the raw string and decode.
+    final prefsJson = jsonDecode(r.string('preferences'));
+    final prefsReader =
+        prefsJson is Map<String, Object?>
+            ? JsonReader.of(prefsJson)
+            : prefsJson is Map
+            ? JsonReader.of(prefsJson.cast<String, Object?>())
+            : null;
     final expiry = r.integerOrNull('subscription_expiry');
     final lastLogin = r.integerOrNull('last_login_at');
     return User(
